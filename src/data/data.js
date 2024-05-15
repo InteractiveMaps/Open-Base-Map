@@ -19,7 +19,7 @@ const bases = [
         numberOfBases: "1",
         baseLocations:[
             {
-                baseName:"* Bangladesh-Kuwait Base",
+                baseName:"Bangladesh-Kuwait Base *",
                 coordinates:[29.3117,47.4818]
             },
 
@@ -71,10 +71,10 @@ const bases = [
     },
     {
         country:"India",
-        numberOfBases: "",
+        numberOfBases: "4",
         baseLocations:[
             {
-                baseName:"* North Agalega Base",
+                baseName:"North Agalega Base *",
                 coordinates:[-10.37431554980248, 56.60823918450346]
             },
             {
@@ -86,7 +86,7 @@ const bases = [
                 coordinates:[38.5142, 68.6755]
             },
             {
-                baseName:"^ Duqm Port",
+                baseName:"Duqm Port ^",
                 coordinates:[19.650, 57.700]
             },
         ]
@@ -96,11 +96,11 @@ const bases = [
         numberOfBases: "4",
         baseLocations:[
             {
-                baseName:"* Al Kiswah Base",
+                baseName:"Al Kiswah Base *",
                 coordinates:[33.3552, 36.2484]
             },
             {
-                baseName:"* Dushanbe Drone Factory Base",
+                baseName:"Dushanbe Drone Factory Base *",
                 coordinates:[38.5598, 68.7870]
             },
             {
@@ -108,7 +108,7 @@ const bases = [
                 coordinates:[38.5142, 68.6755]
             },
             {
-                baseName:"^ Duqm Port",
+                baseName:"Duqm Port ^",
                 coordinates:[19.650, 57.700]
             },
         ]
@@ -148,7 +148,7 @@ const bases = [
         numberOfBases: "1",
         baseLocations:[
             {
-                baseName:"* Tabuk Base",
+                baseName:"Tabuk Base *",
                 coordinates:[28.397222, 36.578889]
             },
         ]
@@ -174,11 +174,11 @@ const bases = [
                 coordinates:[54.463611, 26.778889]
             },
             {
-                baseName:"* Ouagadougou Base",
+                baseName:"Ouagadougou Base *",
                 coordinates:[12.36566, -1.53388]
             },
             {
-                baseName:"# 4th Guards Military Base",
+                baseName:"4th Guards Military Base #",
                 coordinates:[42.225, 43.97]
             },
             {
@@ -229,30 +229,34 @@ const bases = [
                 coordinates:[14.002407035999092, 99.24171960022565]
             },
             {
-                baseName:"Jalan Aman Camp",
-                coordinates:[4.947584205796581, 114.96984403354787]
+                baseName:"Mountain Home Air Force Base",
+                coordinates:[43.04, -115.87]
             },
 
         ]
     },
     {
         country:"Turkey",
-        numberOfBases: "3",
+        numberOfBases: "6",
         baseLocations:[
             {
                 baseName:"Pasha Liman Base",
                 coordinates:[40.323889, 19.419167]
             },
             {
-                baseName:"# Fatih Sultan Mehmet Barracks",
+                baseName:"Fatih Sultan Mehmet Barracks #",
                 coordinates:[43.9159, 17.6791]
             },
             {
-                baseName:"# Bamarni Air Base",
+                baseName:"Bamarni Air Base #",
                 coordinates:[37.05, 43.15]
             },
             {
-                baseName:"* Cyprus Turkish Peace Force Command",
+                baseName:"Bashiqa Air Base *",
+                coordinates:[36.2714, 43.3737]
+            },
+            {
+                baseName:"Cyprus Turkish Peace Force Command *",
                 coordinates:[35.340278, 33.319167]
             },
             {
@@ -268,15 +272,15 @@ const bases = [
         numberOfBases: "3",
         baseLocations:[
             {
-                baseName:"! Al Khadim Airbase",
+                baseName:"Al Khadim Airbase !",
                 coordinates:[32.05013393363698, 21.1835554144562]
             },
             {
-                baseName:"* Perim Island Airbase",
+                baseName:"Perim Island Airbase *",
                 coordinates:[12.661359422799334, 43.418732092573016]
             },
             {
-                baseName:"* Socotra Airport and Seaport",
+                baseName:"Socotra Airport and Seaport *",
                 coordinates:[12.630556, 53.905556]
             },
 
@@ -307,7 +311,7 @@ const bases = [
                 coordinates:[0.03733301403349672, 37.05572755767204]
             },
             {
-                baseName:"* Pokhara Camp",
+                baseName:"Pokhara Camp *",
                 coordinates:[28.191206507653714, 83.99430791141182]
             },
             {
@@ -315,11 +319,11 @@ const bases = [
                 coordinates:[69.056111, 18.540278]
             },
             {
-                baseName:"# Camp Viking",
+                baseName:"Camp Viking #",
                 coordinates:[69.03038285344051, 19.293376003027994]
             },
             {
-                baseName:"# Omani-British Joint Training Area",
+                baseName:"Omani-British Joint Training Area #",
                 coordinates:[18.98032286330739, 57.78875086840502]
             },
             {

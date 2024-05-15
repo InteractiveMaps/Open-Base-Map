@@ -11,6 +11,7 @@ import BaseMapLegend from '@components/Legends/BaseMapLegend';
 import styles from '@styles/Home.module.scss';
 import { bases } from '../data/data';
 import { useEffect, useState } from 'react';
+import InfoTable from '@components/InfoTable';
 
 
 const DEFAULT_CENTER = [0,0]
@@ -71,6 +72,16 @@ export default function Home() {
               </>
             )}
           </Map>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <h2>Overseas Bases</h2>
+          {data.map((base) => {
+            return(
+              <InfoTable country={base.country} tableData={base.baseLocations} key={base.country}></InfoTable>
+            )
+          })}
         </Container>
       </Section>
     </Layout>
