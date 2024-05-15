@@ -9,7 +9,7 @@ import Button from '@components/Button';
 import BaseMapLegend from '@components/Legends/BaseMapLegend';
 
 import styles from '@styles/Home.module.scss';
-import { bases } from './data';
+import { bases } from '../data/data';
 import { useEffect, useState } from 'react';
 
 
