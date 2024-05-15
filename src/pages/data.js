@@ -1,4 +1,4 @@
-export const bases = [
+const bases = [
     {
         country:"Australia",
         numberOfBases: "2",
@@ -740,3 +740,5 @@ export const bases = [
     },
     
 ]
+
+export {bases}
