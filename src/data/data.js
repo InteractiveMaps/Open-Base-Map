@@ -263,8 +263,6 @@ const bases = [
                 baseName:"Camp TURKSOM",
                 coordinates:[1.996, 45.268]
             },
-
-
         ]
     },
     {
@@ -347,7 +345,7 @@ const bases = [
     },
     {
         country:"USA",
-        numberOfBases: "45",
+        numberOfBases: "52",
         baseLocations:[
             {
                 baseName:"Naval Station Rota",
@@ -728,6 +726,34 @@ const bases = [
             {
                 baseName: "RAF Welford",
                 coordinates: [51.468333, -1.403611]
+            },
+            {
+                baseName: "United States Army Garrison Daegu",
+                coordinates: [35.85, 128.6]
+            },
+            {
+                baseName: "Camp Humphreys",
+                coordinates: [36.966667, 127.033333]
+            },
+            {
+                baseName: "Busan Naval Base",
+                coordinates: [35.0996, 129.1065]
+            },
+            {
+                baseName: "Osan Air Base",
+                coordinates: [37.090556, 127.029722]
+            },
+            {
+                baseName: "Commander Fleet Activities Chinhae",
+                coordinates: [35.148091, 128.633766]
+            },
+            {
+                baseName: "Camp Mujuk",
+                coordinates: [35.96, 129.426111]
+            },
+            {
+                baseName: "Camp Thunder Cove",
+                coordinates: [-7.290833, 72.385833]
             },
         ]
     },
