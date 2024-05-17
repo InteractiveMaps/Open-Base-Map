@@ -24,3 +24,10 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
+
+@media screen and (max-width: 600px) {
+  .title{
+    text-align: left;
+    font-size: 2em;
+  }
+}
