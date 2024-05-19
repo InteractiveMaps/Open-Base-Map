@@ -38,11 +38,31 @@ const bases = [
     },
     {
         country:"France",
-        numberOfBases: "1",
+        numberOfBases: "3",
         baseLocations:[
             {
                 baseName:"État-major des FFDJ",
                 coordinates:[11.565642181765126, 43.151344450644295]
+            },
+            {
+                baseName:"Camp de la Paix",
+                coordinates:[24.52151, 54.396107]
+            },
+            {
+                baseName:"Les forces françaises en Côte d’Ivoire #",
+                coordinates:[5.316667, -4.033333]
+            },
+            {
+                baseName:"Eléments Français au Sénégal",
+                coordinates:[14.714829589660296, -17.481848830690566]
+            },
+            {
+                baseName:"N'Djamena International Airport",
+                coordinates:[12.133611, 15.033889]
+            },
+            {
+                baseName:"Prince Hassan Air Base",
+                coordinates:[32.160833, 37.149722]
             },
 
         ]
@@ -178,20 +198,28 @@ const bases = [
                 coordinates:[12.36566, -1.53388]
             },
             {
-                baseName:"4th Guards Military Base #",
-                coordinates:[42.225, 43.97]
+                baseName:"4th Guards Military Base",
+                coordinates:[42.189, 43.939]
+            },
+            {
+                baseName:"7th Military Base",
+                coordinates:[43.104, 40.579]
             },
             {
                 baseName:"Sary Shagan Missile Testing Base",
                 coordinates:[46.383333, 72.866667]
             },
             {
-                baseName:"Baikonur Cosmodrome Spaceport",
+                baseName:"Baikonur Cosmodrome Spaceport ^",
                 coordinates:[45.965, 63.305]
             },
             {
                 baseName:"Kant Air Base",
                 coordinates:[42.853056, 74.846389]
+            },
+            {
+                baseName:"Kambala Air Base",
+                coordinates:[46.025556, 73.495833]
             },
             {
                 baseName:"720th Material-Technical Support Point",
