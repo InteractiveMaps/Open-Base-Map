@@ -26,7 +26,7 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
 
   var markerIcon = new Leaflet.Icon({
         iconUrl: 'leaflet/images/marker-icon.png',
-        shadowUrl: 'leaflet/images/marker-shadow.png',
+        shadowUrl:null,
         iconSize: [20,30]
   })
 

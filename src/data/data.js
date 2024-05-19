@@ -64,6 +64,10 @@ const bases = [
                 baseName:"Prince Hassan Air Base",
                 coordinates:[32.160833, 37.149722]
             },
+            {
+                baseName:"Chabelley Airport",
+                coordinates:[11.516667, 43.066667]
+            },
 
         ]
     },
@@ -138,8 +142,8 @@ const bases = [
         numberOfBases: "1",
         baseLocations:[
             {
-                baseName:"BMIS",
-                coordinates:[35.1856,33.3823]
+                baseName:"Amedeo Guillet BMIS",
+                coordinates:[11.528889, 43.146361]
             },
 
         ]
