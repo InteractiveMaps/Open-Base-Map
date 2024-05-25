@@ -59,11 +59,13 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
                     return(
                       <Marker position={location.coordinates} icon={markerToggle? markerIcon: new LeafIcon({iconUrl: 'country/'+base.country+'.png'})} key={`location-${index}`} >
                         <Popup key={`location-${index}`} >
-                          {location.baseName}
-                          <br></br>
-                          <div style={{display:"flex", gap: "10px", alignItems:"center", maxWidth: "fit-content"}}>
-                            <img style={{width:"1.5em"}} src={"/country/"+base.country+".png"} />
-                            {base.country}
+                          <div className={styles.popup}>
+                            <span className={styles.baseName}>{location.baseName}</span>
+                            <span>{location.location}</span>
+                            <div style={{display:"flex", gap: "10px", alignItems:"center", maxWidth: "fit-content"}}>
+                              <img style={{width:"1.5em"}} src={"/country/"+base.country+".png"} />
+                              {base.country}
+                            </div>
                           </div>
                         </Popup>
                       </Marker>
