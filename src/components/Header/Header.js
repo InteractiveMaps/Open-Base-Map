@@ -11,7 +11,7 @@ const Header = () => {
       <Container className={styles.headerContainer}>
         <p className={styles.headerTitle}>
           <Link href="/">
-            InteractiveMaps
+            Interactive Maps
           </Link>
         </p>
       </Container>
