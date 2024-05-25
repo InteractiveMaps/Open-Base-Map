@@ -52,7 +52,7 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
           {data.map((base)=>{
             return(
               <LayersControl.Overlay checked 
-                name={"<img src='/country/"+base.country+".png' />&nbsp;&nbsp;<span style={{marginLeft:'20px'}}>"+base.country+"</span><br>" } 
+                name={"<img src='/country/"+base.country+".png' alt='flag of"+base.country+"' />&nbsp;&nbsp;<span style={{marginLeft:'20px'}}>"+base.country+"</span><br>" } 
                 key={base.country}>    
                 <LayerGroup key={base.country}>
                   {base.baseLocations.map((location, index)=>{
@@ -63,7 +63,7 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
                             <span className={styles.baseName}>{location.baseName}</span>
                             <span>{location.location}</span>
                             <div style={{display:"flex", gap: "10px", alignItems:"center", maxWidth: "fit-content"}}>
-                              <img style={{width:"1.5em"}} src={"/country/"+base.country+".png"} />
+                              <img style={{width:"1.5em"}} src={"/country/"+base.country+".png"} alt={"flag of" + base.country} />
                               {base.country}
                             </div>
                           </div>

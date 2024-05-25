@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>InteractiveMaps</title>
-        <meta name="description" content="Open source Interactive Maps to showcase data" />
+        <title>Interactive Maps</title>
+        <meta name="description" content="Open source Interactive Maps to showcase data in a cool way" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Section>
