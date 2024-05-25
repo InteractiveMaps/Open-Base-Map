@@ -1,0 +1,1 @@
+Sitemap: https://open-base-map.vercel.app/sitemap.xml
