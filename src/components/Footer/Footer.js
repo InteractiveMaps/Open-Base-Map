@@ -8,7 +8,7 @@ const Footer = ({ ...rest }) => {
       <Container className={`${styles.footerContainer} ${styles.footerLegal}`}>
         <div style={{display: "flex", flexDirection:"row", gap: "1em"}}>
           <p>
-            <a style={{textDecoration:"none"}} href="https://x.com/Interactiv18714">Twitter</a>
+            <a style={{textDecoration:"none"}} href="https://x.com/OI_Maps">Twitter</a>
           </p>
           <p>l</p>
           <p>

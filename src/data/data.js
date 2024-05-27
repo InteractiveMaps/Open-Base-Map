@@ -22,7 +22,7 @@ const bases = [
         baseLocations:[
             {
                 baseName:"Bangladesh-Kuwait Base *",
-                location: "Unknown",
+                location: "Kuwait",
                 coordinates:[29.3117,47.4818]
             },
 

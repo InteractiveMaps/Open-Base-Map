@@ -12,6 +12,7 @@ const InfoTable = ({country, tableData, ...rest }) => {
                         <thead>
                             <tr>
                                 <th className={styles.tableHead}>Base Name</th>
+                                <th className={styles.tableHead}>Location</th>
                                 <th className={styles.tableHead}>Coordinates</th>
                             </tr>
                         </thead>
@@ -20,6 +21,7 @@ const InfoTable = ({country, tableData, ...rest }) => {
                             return(
                             <tr key={table.baseName}>
                                 <td className={styles.tableColumn}>{table.baseName}</td>
+                                <td className={styles.tableColumn}>{table.location}</td>
                                 <td className={styles.tableColumn}>{table.coordinates[0].toFixed(2)}, {table.coordinates[1].toFixed(2)}</td>
                             </tr>
                         )
@@ -27,6 +29,7 @@ const InfoTable = ({country, tableData, ...rest }) => {
                       
                         </tbody>
                 </table>
+                <br/>
                
         </>
     )
