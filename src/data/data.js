@@ -464,7 +464,7 @@ const bases = [
             {
                 baseName: "Niger Air Base 201",
                 location: "Agadez, Niger",
-                coordinates: [16.950278, 8.013889 ]
+                coordinates: [16.950278, 8.013889]
             },
             {
                 baseName: "Arlit US Base *",

@@ -1,0 +1,29 @@
+@import "@styles/settings/_settings";
+
+
+.legendContainer{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .legendHeading{
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .legends{
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+
+    .legendList{
+        display:flex;
+        flex-direction:row;
+        padding-left: 0;
+        gap: 2rem;
+        align-items: flex-start;
+        list-style-type: none;
+    }
+}
+

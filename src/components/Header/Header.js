@@ -14,6 +14,12 @@ const Header = () => {
             Interactive Maps
           </Link>
         </p>
+        <nav>
+          <div style={{display:"flex", gap:"1em"}}>
+            <li style={{listStyleType:"none"}}><a href='/mountain'>Mountain</a></li>
+            <li style={{listStyleType:"none"}}><a href='/'>Military Bases</a></li>
+          </div>
+        </nav>
       </Container>
     </header>
   );
