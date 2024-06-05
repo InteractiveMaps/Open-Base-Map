@@ -16,7 +16,7 @@ const Footer = ({ ...rest }) => {
           </p>
         </div>
         <p>
-          &copy; <a href="/">InteractiveMaps</a>, {new Date().getFullYear()}
+          &copy; <a href="/">InteractiveMaps</a> {new Date().getFullYear()}
         </p>
       </Container>
     </footer>

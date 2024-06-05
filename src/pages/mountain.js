@@ -19,8 +19,8 @@ export default function Mountain() {
   return (
     <Layout>
       <Head>
-        <title>Interactive Maps</title>
-        <meta name="description" content="Open source Interactive Maps to showcase data in a cool way" />
+        <title>Map of the Highest Points in the World</title>
+        <meta name="description" content="An interactive 2D and 3D map that showcases the highest points of each country" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Section>
