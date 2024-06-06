@@ -5,6 +5,7 @@ import Container from '@components/Container';
 import Switch from "react-switch";
 import { mountain_data } from 'src/data/mountaindata';
 import HeightMapLegend from '@components/Legends/HeightMapLegend';
+import MountainInfoTable from '@components/InfoTables/MountainInfoTable';
 
 import styles from '@styles/Home.module.scss';
 import { useState } from 'react';
@@ -35,6 +36,12 @@ export default function Mountain() {
           </div>
           <br></br>
           {is3D ? <div style={{height:"60vh", width:"100%", position:"relative"}}><Globe data_src={mountain_data}></Globe></div> : <MountainMap data_src={mountain_data} width="800" height="600"></MountainMap>}
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <h2>Highest Points</h2>
+          <MountainInfoTable tableData={mountain_data}></MountainInfoTable>
         </Container>
       </Section>
     </Layout>

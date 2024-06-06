@@ -9,7 +9,7 @@ import Switch from "react-switch";
 import styles from '@styles/Home.module.scss';
 import { bases } from '../data/data';
 import { useState } from 'react';
-import InfoTable from '@components/InfoTable';
+import BaseInfoTable from '@components/InfoTables/BaseInfoTable';
 
 export default function Home() {
   const [data, setData] = useState(bases)
@@ -43,7 +43,7 @@ export default function Home() {
           <h2>Overseas Bases</h2>
           {data.map((base) => {
             return(
-              <InfoTable country={base.country} tableData={base.baseLocations} key={base.country}></InfoTable>
+              <BaseInfoTable country={base.country} tableData={base.baseLocations} key={base.country}></BaseInfoTable>
             )
           })}
         </Container>

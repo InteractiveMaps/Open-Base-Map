@@ -167,9 +167,10 @@ export default function Root() {
       <div style={{margin:"auto", display:"flex", justifyContent:"center", maxWidth:"100%"}}>
         <button className={styles.buttonStyle} disabled={counter>0?false:true} onClick={decrementRace}><FaArrowLeft /> </button>
           <div style={{display:"flex", gap:"10px", flexWrap:"wrap", flexDirection:"column", alignItems:"center"}}>
-            <span style={{fontSize:"1em"}}>{CITIES[counter].official_name}</span>
-            <span>{CITIES[counter].circuit}</span>
-            <span>{CITIES[counter].start_date} to {CITIES[counter].end_date}</span>
+            <span className={styles.name}>{CITIES[counter].name}</span>
+            <span className={styles.officialName}>{CITIES[counter].official_name}</span>
+            <span className={styles.officialName}>{CITIES[counter].circuit}</span>
+            <span className={styles.officialName}>{CITIES[counter].start_date} to {CITIES[counter].end_date}</span>
           </div>
         <button className={styles.buttonStyle} disabled={counter+1<CITIES.length?false:true} onClick={incrementRace}><FaArrowRight /></button>
       </div>

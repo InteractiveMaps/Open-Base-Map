@@ -4,3 +4,21 @@
     width: 4rem;
     cursor: pointer;
 }
+
+.name{
+    display: none;
+    font-size: 1em;
+}
+
+.officialName{
+    font-size:"1em"
+}
+
+@media screen and (max-width:480px) {
+    .officialName{
+        display: none;
+    }
+    .name{
+        display: block;
+    }
+}

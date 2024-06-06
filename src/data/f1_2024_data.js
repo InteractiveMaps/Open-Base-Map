@@ -10,7 +10,7 @@ const f1Data_2024 = [
         "coordinates":[26.0325, 50.510556],
         "latitude":26.0325,
         "longitude":50.510556,
-        "zoom":1,
+        "zoom":0,
         "to_coordinates": [21.631944, 39.104444],
         "to_latitutde":21.631944,
         "to_longitude":39.104444

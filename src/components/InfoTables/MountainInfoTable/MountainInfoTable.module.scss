@@ -1,0 +1,23 @@
+@import "@styles/settings/_settings";
+
+.table{
+    text-align: left;
+
+    .tableColumn{
+        padding-right: 2em;
+        padding-bottom: 1em;
+        width: 15em;
+        max-width: 15em;
+        font-weight: lighter;
+    }
+}
+.tableHead{
+    font-weight: 500;
+}
+
+@media screen and (max-width:480px) {
+    .table{
+        font-size: 0.84em;
+    }
+    
+}

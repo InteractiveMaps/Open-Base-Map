@@ -1,6 +1,6 @@
-import styles from './InfoTable.module.scss';
+import styles from './BaseInfoTable.module.scss';
 
-const InfoTable = ({country, tableData, ...rest }) => {
+const BaseInfoTable = ({country, tableData, ...rest }) => {
     return(
         <>
             <div className={styles.country}>
@@ -35,4 +35,4 @@ const InfoTable = ({country, tableData, ...rest }) => {
     )
 }
 
-export default InfoTable;
+export default BaseInfoTable;

@@ -4,24 +4,21 @@ import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 import { GrMenu } from "react-icons/gr";
+import { RxCross1 } from "react-icons/rx";
 
 import Container from '@components/Container';
 
 import styles from './Header.module.scss';
 import 'react-dropdown/style.css';
+import { useState } from 'react';
 
 
 
 
 const Header = () => {
-  const options = [
-    { value: 'formula-1', label: 'Formula 1' },
-    { value: 'mountains', label: 'Heighest Points' },
-    { value: 'military-base', label: 'Military Bases' },
-  ];
-  
-  function handleChange(){
-    window.location.href("/"+event.target.value)
+  const[menuOpen, setMenuOpen] = useState(false) 
+  function handleMenu(){
+    setMenuOpen(!menuOpen)
   }
   return (
     <header className={styles.header}>
@@ -38,7 +35,7 @@ const Header = () => {
             <li style={{listStyleType:"none"}}><a href='/'>Military Bases</a></li>
           </div>
         </nav> */}
-        <Menu menuButton={<MenuButton className={styles.buttonStyle}><GrMenu size={28} /></MenuButton>} transition>
+        <Menu menuButton={<MenuButton className={styles.buttonStyle} onClick={handleMenu}>{menuOpen?<RxCross1 size={28}/>:<GrMenu size={28} />}</MenuButton>} transition>
           <MenuItem><a href='/formula-1'>Formula 1</a></MenuItem>
           <MenuItem><a href='/mountain'>Mountain</a></MenuItem>
           <MenuItem><a href='/'>Military Bases</a></MenuItem>

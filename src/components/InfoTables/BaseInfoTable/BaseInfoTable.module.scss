@@ -21,3 +21,10 @@
 .tableHead{
     font-weight: 500;
 }
+
+@media screen and (max-width:480px) {
+    .table{
+        font-size: 0.84em;
+    }
+    
+}
