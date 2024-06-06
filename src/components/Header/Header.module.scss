@@ -54,3 +54,20 @@
     }
   }
 }
+
+.buttonStyle{
+  background-color: black;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+// .menuStyle{
+//   size: 500px;
+// }
+
+@media screen and (max-width: 480px) {
+  .headerTitle{
+    font-size: 1.2em;
+  }
+}
