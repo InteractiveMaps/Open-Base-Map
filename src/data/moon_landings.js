@@ -974,4 +974,21 @@ const moon_landings_filtered = [
     }
 ]
 
-export {moon_landings,moon_landings_filtered}
+const moon_landings_references= [
+    {
+        referenceType:"Data Sources",
+        sources:[
+            {name:"Wikipedia - List of missions to the Moon", link:"https://en.wikipedia.org/wiki/List_of_missions_to_the_Moon" },
+            {name:"NASA - Moon Missions",link:"https://science.nasa.gov/moon/missions/"},
+            {name:"The Planetary Society - Every Mission to the Moon, Ever", link:"https://www.planetary.org/space-missions/every-moon-mission"}
+        ]
+    },
+    {
+        referenceType:"Image sources",
+        sources:[
+            {name:"Flaticon",link:"https://flaticon.com"},{name:"Freepik",link:"https://freepik.com"}
+        ]
+    },
+]
+
+export {moon_landings,moon_landings_filtered, moon_landings_references}

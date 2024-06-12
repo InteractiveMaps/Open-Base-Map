@@ -9,6 +9,8 @@ import { useState } from 'react';
 import MoonGlobe from '@components/MoonGlobe';
 import MoonMap from '@components/MoonMap';
 import MoonMapLegend from '@components/Legends/MoonMapLegend';
+import References from '@components/References';
+import { moon_landings_references } from 'src/data/moon_landings';
 
 export default function Moon_Landings() {
   const [is3D, setIs3D] = useState(false)
@@ -36,6 +38,12 @@ export default function Moon_Landings() {
           {is3D ? <div style={{height:"60vh", width:"100%", position:"relative"}}>
             <MoonGlobe></MoonGlobe>
           </div>: <MoonMap width="800" height="500"></MoonMap>}
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <h2>References and Credits</h2>
+          <References referenceData={moon_landings_references}></References>
         </Container>
       </Section>
     </Layout>

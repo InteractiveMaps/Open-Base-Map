@@ -214,4 +214,22 @@ const mountain_data = [
     {"country":"United States Virgin Islands","name":"Crown Mountain","height":474,"heightF":1555,"coordinates":[18.357222, -64.974722]},{"country":"Wallis and Futuna","name":"Mont Puke","height":524,"heightF":1719,"coordinates":[-14.270833, -178.138889]},{"country":"Yemen","name":"Jabal An-Nabi Shu'ayb","height":3666,"heightF":12028,"coordinates":[15.279167, 43.975833]},{"country":"Zambia","name":"Mafinga Central","height":2329,"heightF":7641,"coordinates":[-9.952694, 33.352361]},{"country":"Zimbabwe","name":"Mount Nyangani","height":2592,"heightF":8504,"coordinates":[-18.3, 32.841667]}
 ]
 
-export {mountain_data}
+const mountain_data_references = [
+    {
+        referenceType:"Data sources",
+        sources:[
+           {name:"List of Elevation extremes", link:"https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"},
+           {name:"Kao (island)",link:"https://en.wikipedia.org/wiki/Kao_(island)"},
+           {name:"Nepen Diakha",link:"https://en.wikipedia.org/wiki/Nepen_Diakha"},
+           {name:"R/Geography" ,link:"https://www.reddit.com/r/geography/comments/lhm24q/the_high_point_of_every_country_sahrawi_arab/"}
+        ]
+    },
+    {
+        referenceType:"Image sources",
+        sources:[
+            {name:"Flaticon",link:"https://flaticon.com"},{name:"Freepik",link:"https://freepik.com"}
+        ]
+    },
+]
+
+export {mountain_data, mountain_data_references}

@@ -343,4 +343,20 @@ const f1Data_2024 = [
     }
 ]
 
-export default f1Data_2024
+const f1Data_2024_refernces= [
+    {
+        referenceType:"Data Sources",
+        sources:[
+            {name:"Formula1 - F1 Schedule 2024", link:"https://www.formula1.com/en/racing/2024.html" },
+            {name:"Wikipedia - 2024 Formula One World Championship",link:"https://en.wikipedia.org/wiki/2024_Formula_One_World_Championship"}
+        ]
+    },
+    {
+        referenceType:"Image sources",
+        sources:[
+            {name:"Flaticon",link:"https://flaticon.com"},{name:"Freepik",link:"https://freepik.com"}
+        ]
+    },
+]
+
+export {f1Data_2024, f1Data_2024_refernces}

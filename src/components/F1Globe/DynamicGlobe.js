@@ -8,7 +8,7 @@ import {GeoJsonLayer} from '@deck.gl/layers';
 import {SphereGeometry} from '@luma.gl/engine';
 import DeckGL from '@deck.gl/react';
 import {ArcLayer} from '@deck.gl/layers';
-import f1Data_2024 from 'src/data/f1_2024_data';
+import {f1Data_2024} from 'src/data/f1_2024_data';
 // import { f1Data_2025 } from 'src/data/f1_2025_data';
 import f1Data_2025 from 'src/data/f1_2025_data';
 import {COORDINATE_SYSTEM,_GlobeView as GlobeView,  LightingEffect,

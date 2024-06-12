@@ -7,15 +7,21 @@ import BaseMapLegend from '@components/Legends/BaseMapLegend';
 import Switch from "react-switch";
 
 import styles from '@styles/Home.module.scss';
-import { bases } from '../data/data';
+import { bases, base_references } from '../data/data';
 import { useState } from 'react';
 import BaseInfoTable from '@components/InfoTables/BaseInfoTable';
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+import References from '@components/References';
 
 export default function Home() {
   const [data, setData] = useState(bases)
   const [isMarker, setIsMarker] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   function handleChange(){
     setIsMarker(!isMarker)
+  }
+  function handleOpen(){
+    setIsOpen(!isOpen)
   }
   return (
     <Layout>
@@ -39,13 +45,22 @@ export default function Home() {
         </Container>
       </Section>
       <Section>
+       
         <Container>
-          <h2>Overseas Bases</h2>
-          {data.map((base) => {
+          <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", gap:"6rem"}}>
+            <h2>View Overseas Bases</h2>
+            {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
+          </div>
+          {isOpen?data.map((base) => {
             return(
               <BaseInfoTable country={base.country} tableData={base.baseLocations} key={base.country}></BaseInfoTable>
             )
-          })}
+          }):<></>}
+          <br/>
+          <div>
+            <h2>Reference and Credits</h2>
+            <References referenceData={base_references}/>
+          </div>
         </Container>
       </Section>
     </Layout>

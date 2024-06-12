@@ -3,19 +3,25 @@ import Layout from '@components/Layout';
 import Section from '@components/Section';
 import Container from '@components/Container';
 import Switch from "react-switch";
-import { mountain_data } from 'src/data/mountaindata';
+import { mountain_data, mountain_data_references } from 'src/data/mountaindata';
 import HeightMapLegend from '@components/Legends/HeightMapLegend';
 import MountainInfoTable from '@components/InfoTables/MountainInfoTable';
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 
 import styles from '@styles/Home.module.scss';
 import { useState } from 'react';
 import MountainMap from '@components/MountainMap';
 import Globe from '@components/Globe-deck';
+import References from '@components/References';
 
 export default function Mountain() {
   const [is3D, setIs3D] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   function handleChange(){
     setIs3D(!is3D)
+  }
+  function handleOpen(){
+    setIsOpen(!isOpen)
   }
   return (
     <Layout>
@@ -40,8 +46,15 @@ export default function Mountain() {
       </Section>
       <Section>
         <Container>
-          <h2>Highest Points</h2>
-          <MountainInfoTable tableData={mountain_data}></MountainInfoTable>
+          <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", gap:"6rem"}}>
+            <h2>View Highest Points</h2>
+            {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
+          </div>
+          {isOpen?<MountainInfoTable tableData={mountain_data}></MountainInfoTable>:<></>}
+          
+          <br></br>
+          <h2>References and Credits</h2>
+          <References referenceData={mountain_data_references} />
         </Container>
       </Section>
     </Layout>
