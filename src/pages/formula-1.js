@@ -6,8 +6,16 @@ import Container from '@components/Container';
 import styles from '@styles/Home.module.scss';
 import { useState } from 'react';
 import F1Globe from '@components/F1Globe';
+import  f1Data_2024  from 'src/data/f1_2024_data';
+import  f1Data_2025  from 'src/data/f1_2024_data';
 
 export default function Formula1() {
+  const [f1Year, setf1Year] = useState(2024)
+  const [data,setData] = useState(f1Data_2024)
+  // function handleChange(){
+  //   setf1Year(2025)
+  //   setData(f1Data_2025)
+  // }
   return (
     <Layout>
       <Head>
@@ -17,8 +25,11 @@ export default function Formula1() {
       </Head>
       <Section>
         <Container>
-          <h1 className={styles.title}>Map of F1 Races</h1>
-            <F1Globe></F1Globe>
+          <h1 className={styles.title}>Map of F1 Races in {f1Year}</h1>
+          {/* <button onClick={handleChange}>See 2025</button> */}
+            {/* {f1Year > 2024? <F1Globe year={2025}></F1Globe>:<F1Globe year={2024}></F1Globe>} */}
+            
+            <F1Globe year={2024} data={data}></F1Globe>
         </Container>
       </Section>
     </Layout>

@@ -8,7 +8,9 @@ import {GeoJsonLayer} from '@deck.gl/layers';
 import {SphereGeometry} from '@luma.gl/engine';
 import DeckGL from '@deck.gl/react';
 import {ArcLayer} from '@deck.gl/layers';
-import { f1Data_2024 } from 'src/data/f1_2024_data';
+import f1Data_2024 from 'src/data/f1_2024_data';
+// import { f1Data_2025 } from 'src/data/f1_2025_data';
+import f1Data_2025 from 'src/data/f1_2025_data';
 import {COORDINATE_SYSTEM,_GlobeView as GlobeView,  LightingEffect,
     AmbientLight,
     _SunLight as SunLight} from '@deck.gl/core';
@@ -16,24 +18,23 @@ import {FlyToInterpolator} from '@deck.gl/core';
 import { FaArrowLeft,FaArrowRight } from "react-icons/fa6";
 import styles from "./F1Globe.module.scss"
 
-const CITIES = f1Data_2024
+
 const EARTH_RADIUS_METERS = 6.3e6;
 
-//   const ambientLight = new AmbientLight({
-//     color: [255, 255, 255],
-//     intensity: 0.5
-//   });
-//   const sunLight = new SunLight({
-//     color: [255, 255, 255],
-//     intensity: 2.0,
-//     timestamp: 0
-//   });
+const Root = ({year,data,...rest}) => {
+  // const [dataYear, setDataYear] = useState()
+  let CITIES = []
+  if(year == 2024){
+    // setDataYear(2024)
+    CITIES = f1Data_2024
+  }
+  else{
+    // setDataYear(2025)
+    CITIES = f1Data_2025
 
-// const lightingEffect = new LightingEffect({ambientLight, sunLight});
+  }
 
- 
-export default function Root() {
-  // const [currentTime, setCurrentTime] = useState(0);
+
   const [counter, setCounter] = useState(0)
   const [initialViewState, setInitialViewState] = useState(CITIES[0]);
   const [arcLayers,setArcLayer] = useState([])
@@ -78,13 +79,13 @@ export default function Root() {
   }
   
   
-  function highlightIcon(value){
-    if(value==CITIES[counter]){
-      return 'markers/orange.png'
-    }else{
-      return 'markers/red.png'
-    }
-  }
+  // function highlightIcon(value){
+  //   if(value==CITIES[counter]){
+  //     return 'markers/orange.png'
+  //   }else{
+  //     return 'markers/red.png'
+  //   }
+  // }
 
 
   const backgroundLayers = useMemo(
@@ -107,7 +108,7 @@ export default function Root() {
         getPosition: (d) => d.coordinates.reverse(),
         getSize: 32,
         getIcon: (d) => ({
-            url: highlightIcon(d),
+            url:'markers/red.png',
             width:128,
             height:128,            
         }),
@@ -188,3 +189,5 @@ export default function Root() {
     </div>
   );
 }
+
+export default Root;
