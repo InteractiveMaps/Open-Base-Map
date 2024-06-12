@@ -9,14 +9,20 @@ import F1Globe from '@components/F1Globe';
 import  {f1Data_2024, f1Data_2024_refernces}  from 'src/data/f1_2024_data';
 import  f1Data_2025  from 'src/data/f1_2024_data';
 import References from '@components/References';
+import F1InfoTable from '@components/InfoTables/F1InfoTable';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 export default function Formula1() {
   const [f1Year, setf1Year] = useState(2024)
   const [data,setData] = useState(f1Data_2024)
+  const [isOpen, setIsOpen] = useState(false)
   // function handleChange(){
   //   setf1Year(2025)
   //   setData(f1Data_2025)
   // }
+  function handleOpen(){
+    setIsOpen(!isOpen)
+  }
   return (
     <Layout>
       <Head>
@@ -35,6 +41,11 @@ export default function Formula1() {
       </Section>
       <Section>
         <Container>
+        <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
+              <h2>View all F1 Races in 2024</h2>
+              {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
+          </div>
+          {isOpen?<F1InfoTable tableData={f1Data_2024}></F1InfoTable>:<></>}
           <h2>References and Credits</h2>
           <References referenceData={f1Data_2024_refernces} />
         </Container>

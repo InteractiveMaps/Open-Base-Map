@@ -47,7 +47,7 @@ export default function Home() {
       <Section>
        
         <Container>
-          <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", gap:"6rem"}}>
+          <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
             <h2>View Overseas Bases</h2>
             {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
           </div>

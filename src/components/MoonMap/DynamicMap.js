@@ -34,7 +34,6 @@ const Map = ({ children, className, width, height, ...rest }) => {
       />
       <LayersControl position="topright">
       {data_src.map((base)=>{
-        console.log(base)
         return(
           <LayersControl.Overlay checked
             name={base.missionType}
@@ -46,6 +45,7 @@ const Map = ({ children, className, width, height, ...rest }) => {
                   <Popup>
                     <div className={styles.popup}>
                       <span className={styles.baseName}>{location.name}</span>
+                      <span>{location.type}</span>
                       <span>{location.country}</span>
                     </div>
                   </Popup>

@@ -9,11 +9,14 @@
 
 .table{
     text-align: left;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 
     .tableColumn{
         padding-right: 2em;
         padding-bottom: 1em;
-        width: 15em;
+        white-space: wrap;
         max-width: 15em;
         font-weight: lighter;
     }

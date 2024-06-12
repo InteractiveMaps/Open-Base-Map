@@ -11,11 +11,18 @@ import MoonMap from '@components/MoonMap';
 import MoonMapLegend from '@components/Legends/MoonMapLegend';
 import References from '@components/References';
 import { moon_landings_references } from 'src/data/moon_landings';
+import { moon_landings } from 'src/data/moon_landings';
+import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
+import MoonInfoTable from '@components/InfoTables/MoonInfoTable';
 
 export default function Moon_Landings() {
   const [is3D, setIs3D] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   function handleChange(){
     setIs3D(!is3D)
+  }
+  function handleOpen(){
+    setIsOpen(!isOpen)
   }
   return (
     <Layout>
@@ -42,6 +49,11 @@ export default function Moon_Landings() {
       </Section>
       <Section>
         <Container>
+          <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
+              <h2>View all Moon Landings/Impacts</h2>
+              {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
+          </div>
+          {isOpen?<MoonInfoTable tableData={moon_landings}></MoonInfoTable>:<></>}
           <h2>References and Credits</h2>
           <References referenceData={moon_landings_references}></References>
         </Container>
