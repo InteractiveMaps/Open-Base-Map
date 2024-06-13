@@ -2,27 +2,12 @@ import Head from 'next/head';
 import Layout from '@components/Layout';
 import Section from '@components/Section';
 import Container from '@components/Container';
-import Map from '@components/Map';
-import BaseMapLegend from '@components/Legends/BaseMapLegend';
-import Switch from "react-switch";
 
 import styles from '@styles/Home.module.scss';
-import { bases, base_references } from '../data/data';
 import { useState } from 'react';
-import BaseInfoTable from '@components/InfoTables/BaseInfoTable';
-import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
-import References from '@components/References';
+import { GoArrowRight } from "react-icons/go";
 
-export default function Home() {
-  const [data, setData] = useState(bases)
-  const [isMarker, setIsMarker] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
-  function handleChange(){
-    setIsMarker(!isMarker)
-  }
-  function handleOpen(){
-    setIsOpen(!isOpen)
-  }
+export default function Moon_Landings() {
   return (
     <Layout>
       <Head>
@@ -31,36 +16,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Section>
-        <Container>
-          <h1 className={styles.title}>Map of Overseas Military Bases</h1>
-          <div style={{display: "flex", flexDirection:"row", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap"}}>
-            <BaseMapLegend/>
-            <div style={{display: "flex", flexDirection:"row", gap:"1em", alignItems:"center"}}>
-              <span>Toggle Markers?</span>
-              <Switch onChange={handleChange} checked={isMarker}/>
+        <Container style={{border:"0px solid gray", borderRadius:"10px"}}>
+            <h1>Latest Map</h1>
+            <div style={{display:"flex", flexDirection:"row", alignItems:"center", flexWrap:"wrap", justifyContent:"space-between", padding:"10px 0 20px"}}>
+                <div className={styles.heroImage}>
+                    <img src='screenshots/moon_screenshot.png'></img>
+                </div>
+                <div className={styles.heroContent} >
+                    <h3>Map of all landings/impacts on the Moon</h3>
+                    <p>Since human beings discovered space flight, the concept for getting to the moon has always been at the forefront
+                        of exploration. From the late 1950s, the United States and the Soviet Union have competed to reach the moon. 
+                    </p>
+                    <p>
+                    Now in this new millenia,
+                        at least 9 countries have built equipment that has landed/impacted our nearest neighbour. 
+                        This map showcases all the locations on the moon where landings and impacts have occured
+                    </p>
+                    <a style={{display:"flex", alignItems:"center", gap:"1rem"}} href='/moon-landings'><b>Check it out here</b> <GoArrowRight size={24} /></a>
+                </div>
             </div>
-          </div>
-          <br></br>
-          <Map width="800" height="600" markerToggle={isMarker} ></Map>
+            {/* <hr></hr> */}
         </Container>
       </Section>
       <Section>
-       
         <Container>
-          <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
-            <h2>View Overseas Bases</h2>
-            {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
-          </div>
-          {isOpen?data.map((base) => {
-            return(
-              <BaseInfoTable country={base.country} tableData={base.baseLocations} key={base.country}></BaseInfoTable>
-            )
-          }):<></>}
-          <br/>
-          <div>
-            <h2>Reference and Credits</h2>
-            <References referenceData={base_references}/>
-          </div>
+            <h1>All Maps</h1>
+            <div className={styles.gridContainer}>
+                <a href='/moon-landings' className={styles.gridItem}><div className={styles.card}>
+                    <h3>Map of all landings/impacts on the Moon</h3>
+                    <img src='screenshots/moon_screenshot.png' style={{width:"100%"}}></img>
+                    <p>Showcases all the impacts and landings on the moon, since 1960s</p>
+                </div></a>
+                <a href='/formula-1' className={styles.gridItem}><div className={styles.card}>
+                    <h3>Map of all Formula 1 Races in 2024</h3>
+                    <img src='screenshots/f1_screenshot.png' style={{width:"100%"}}></img>
+                    <p>Showcases the entire race calendar for Formula1 in 2024, complete with animations as drivers travel from race to race</p>
+                </div></a>
+                <a href='/mountain' className={styles.gridItem}><div className={styles.card}>
+                    <h3>Map of the highest points in each country</h3>
+                    <img src='screenshots/mountain_screenshot.png' sstyle={{width:"100%"}}></img>
+                    <p>Showcases the highest points in all countries/regions across the world. </p>
+                </div></a>
+                <a href='/overseas-military-bases' className={styles.gridItem}><div className={styles.card}>
+                    <h3>Map of Overseas Military Bases</h3>
+                    <img src='screenshots/base_screenshot.png' style={{width:"100%"}}></img>
+                    <p>Showcases the highest points in all countries/regions across the world. </p>
+                </div></a>
+            </div>
         </Container>
       </Section>
     </Layout>

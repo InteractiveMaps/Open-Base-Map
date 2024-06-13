@@ -39,7 +39,7 @@ const Header = () => {
         <MenuItem><a href='/moon-landings'>Moon Landings</a></MenuItem>
           <MenuItem><a href='/formula-1'>Formula 1</a></MenuItem>
           <MenuItem><a href='/mountain'>Mountain</a></MenuItem>
-          <MenuItem><a href='/'>Military Bases</a></MenuItem>
+          <MenuItem><a href='/overseas-military-bases'>Military Bases</a></MenuItem>
         </Menu>
       </Container>
     </header>

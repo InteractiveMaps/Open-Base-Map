@@ -12,6 +12,7 @@
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    width: 100%;
 
     .tableColumn{
         padding-right: 2em;
@@ -28,6 +29,7 @@
 @media screen and (max-width:480px) {
     .table{
         font-size: 0.84em;
+        width: 300px;
     }
     
 }

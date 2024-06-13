@@ -5,6 +5,13 @@
   margin: 0 0 1em;
 }
 
+.heroImage{
+  width:500px;
+}
+.heroContent{
+  width: 50%;
+}
+
 .description {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -25,9 +32,47 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-@media screen and (max-width: 600px) {
+.gridContainer{
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-gap: 20px
+}
+
+.gridItems{
+  display: inline-grid;
+}
+
+.card{
+  display:flex; 
+  height:420px; 
+  max-width:100%; 
+  margin-top:1rem;
+  flex-direction:column; 
+  padding:30px; 
+  border:1px solid gray; 
+  border-radius:10px;
+}
+
+.card:hover{
+  background-color: black;
+  color: wheat;
+}
+
+
+@media screen and (max-width: 768px) {
   .title{
     text-align: left;
     font-size: 1.2em;
   }
+
+  .heroImage{
+    width: 100%;
+  }
+
+  .heroContent{
+    margin-top: 1rem;
+    width: 100%;
+  }
 }
+
