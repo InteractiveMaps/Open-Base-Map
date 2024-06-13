@@ -10,6 +10,7 @@ const MoonInfoTable = ({tableData, ...rest }) => {
                                 <th className={styles.tableHead}>Country</th>
                                 <th className={styles.tableHead}>Mission Type</th>
                                 <th className={styles.tableHead}>Status</th>
+                                <th className={styles.tableHead}>Impact Date (DD/MM/YYYY)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -20,6 +21,7 @@ const MoonInfoTable = ({tableData, ...rest }) => {
                                 <td className={styles.tableColumn}>{table.country}</td>
                                 <td className={styles.tableColumn}>{table.type}</td>
                                 <td className={styles.tableColumn}>{table.status}</td>
+                                <td className={styles.tableColumn}>{table.date}</td>
                                 {/* <td className={styles.tableColumn}>{table.coordinates[0].toFixed(2)}, {table.coordinates[1].toFixed(2)}</td> */}
                             </tr>
                         )

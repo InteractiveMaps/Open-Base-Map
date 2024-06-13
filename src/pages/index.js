@@ -23,7 +23,7 @@ export default function Moon_Landings() {
                     <img src='screenshots/moon_screenshot.png'></img>
                 </div>
                 <div className={styles.heroContent} >
-                    <h3>Map of all landings/impacts on the Moon</h3>
+                    <h3>Map of all Landings/Impacts on the Moon</h3>
                     <p>Since human beings discovered space flight, the concept for getting to the moon has always been at the forefront
                         of exploration. From the late 1950s, the United States and the Soviet Union have competed to reach the moon. 
                     </p>
@@ -43,7 +43,7 @@ export default function Moon_Landings() {
             <h1>All Maps</h1>
             <div className={styles.gridContainer}>
                 <a href='/moon-landings' className={styles.gridItem}><div className={styles.card}>
-                    <h3>Map of all landings/impacts on the Moon</h3>
+                    <h3>Map of all Landings/Impacts on the Moon</h3>
                     <img src='screenshots/moon_screenshot.png' style={{width:"100%"}}></img>
                     <p>Showcases all the impacts and landings on the moon, since 1960s</p>
                 </div></a>
@@ -53,7 +53,7 @@ export default function Moon_Landings() {
                     <p>Showcases the entire race calendar for Formula1 in 2024, complete with animations as drivers travel from race to race</p>
                 </div></a>
                 <a href='/mountain' className={styles.gridItem}><div className={styles.card}>
-                    <h3>Map of the highest points in each country</h3>
+                    <h3>Map of the Highest Points in each Country</h3>
                     <img src='screenshots/mountain_screenshot.png' sstyle={{width:"100%"}}></img>
                     <p>Showcases the highest points in all countries/regions across the world. </p>
                 </div></a>
