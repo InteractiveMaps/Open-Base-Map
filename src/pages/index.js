@@ -42,6 +42,11 @@ export default function Moon_Landings() {
         <Container>
             <h1>All Maps</h1>
             <div className={styles.gridContainer}>
+                <a href='/formula-1-2025' className={styles.gridItem}><div className={styles.card}>
+                    <h3>Map of all Formula 1 Races in 2025</h3>
+                    <img src='screenshots/f1_2025_screenshot.png' style={{width:"100%"}}></img>
+                    <p>Showcases the entire race calendar for Formula 1 in 2025, complete with animations as drivers travel from race to race</p>
+                </div></a>
                 <a href='/moon-landings' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of all Landings/Impacts on the Moon</h3>
                     <img src='screenshots/moon_screenshot.png' style={{width:"100%"}}></img>
@@ -50,7 +55,7 @@ export default function Moon_Landings() {
                 <a href='/formula-1' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of all Formula 1 Races in 2024</h3>
                     <img src='screenshots/f1_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Showcases the entire race calendar for Formula1 in 2024, complete with animations as drivers travel from race to race</p>
+                    <p>Showcases the entire race calendar for Formula 1 in 2024, complete with animations as drivers travel from race to race</p>
                 </div></a>
                 <a href='/mountain' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of the Highest Points in each Country</h3>

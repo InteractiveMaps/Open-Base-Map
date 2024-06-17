@@ -343,7 +343,7 @@ const f1Data_2024 = [
     }
 ]
 
-const f1Data_2024_refernces= [
+const f1Data_2024_references= [
     {
         referenceType:"Data Sources",
         sources:[
@@ -359,4 +359,4 @@ const f1Data_2024_refernces= [
     },
 ]
 
-export {f1Data_2024, f1Data_2024_refernces}
+export {f1Data_2024, f1Data_2024_references}

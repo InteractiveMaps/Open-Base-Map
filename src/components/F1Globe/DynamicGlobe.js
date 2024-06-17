@@ -1,16 +1,11 @@
 import React from 'react';
 import {useState, useMemo, useCallback} from 'react';
-// import {TileLayer} from '@deck.gl/geo-layers';
-// import {BitmapLayer} from '@deck.gl/layers';
 import {SimpleMeshLayer} from '@deck.gl/mesh-layers';
 import {IconLayer} from '@deck.gl/layers';
 import {GeoJsonLayer} from '@deck.gl/layers';
 import {SphereGeometry} from '@luma.gl/engine';
 import DeckGL from '@deck.gl/react';
 import {ArcLayer} from '@deck.gl/layers';
-import {f1Data_2024} from 'src/data/f1_2024_data';
-// import { f1Data_2025 } from 'src/data/f1_2025_data';
-import f1Data_2025 from 'src/data/f1_2025_data';
 import {COORDINATE_SYSTEM,_GlobeView as GlobeView,  LightingEffect,
     AmbientLight,
     _SunLight as SunLight} from '@deck.gl/core';
@@ -22,19 +17,7 @@ import styles from "./F1Globe.module.scss"
 const EARTH_RADIUS_METERS = 6.3e6;
 
 const Root = ({year,data,...rest}) => {
-  // const [dataYear, setDataYear] = useState()
-  let CITIES = []
-  if(year == 2024){
-    // setDataYear(2024)
-    CITIES = f1Data_2024
-  }
-  else{
-    // setDataYear(2025)
-    CITIES = f1Data_2025
-
-  }
-
-
+  const CITIES=data
   const [counter, setCounter] = useState(0)
   const [initialViewState, setInitialViewState] = useState(CITIES[0]);
   const [arcLayers,setArcLayer] = useState([])
@@ -77,30 +60,9 @@ const Root = ({year,data,...rest}) => {
       })
     }else{setBackButtonState(true)}
   }
-  
-  
-  // function highlightIcon(value){
-  //   if(value==CITIES[counter]){
-  //     return 'markers/orange.png'
-  //   }else{
-  //     return 'markers/red.png'
-  //   }
-  // }
-
 
   const backgroundLayers = useMemo(
     () => [
-      // new ArcLayer({
-      //   id: "ArcLayer",
-      //   data:CITIES,
-      //   getSourceColor: (d) => [Math.sqrt(d.name.length), 240, 0], 
-      //   getTargetColor: (d) => [Math.sqrt(d.circuit.length), 140, 0],
-      //   getSourcePosition: (d) => d.coordinates.reverse(),
-      //   getTargetPosition: (d) => d.to_coordinates.reverse(),
-      //   getWidth: 3,
-      //   getHeight:0.01,
-      //   pickable: true
-      // }),
       new IconLayer({
         id:"IconLayer",
         data:CITIES,

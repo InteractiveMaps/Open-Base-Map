@@ -8,7 +8,7 @@ const f1Data_2025 = [
         "coordinates":[-37.849722, 144.968333],
         "latitude":-37.849722,
         "longitude":144.96833,
-        "zoom":1,
+        "zoom":0.5,
         "to_coordinates":[31.338889, 121.219722],
         "to_latitutde":31.338889,
         "to_longitude": 121.219722
@@ -337,4 +337,20 @@ const f1Data_2025 = [
     }
 ]
 
-export default f1Data_2025
+const f1Data_2025_references= [
+    {
+        referenceType:"Data Sources",
+        sources:[
+            {name:"FIA and Formula 1 announce calendar for 2025", link:"https://www.formula1.com/en/latest/article/fia-and-formula-1-announces-calendar-for-2025.48ii9hOMGxuOJnjLgpA5qS" },
+            {name:"Wikipedia - 2025 Formula One World Championship",link:"https://en.wikipedia.org/wiki/2025_Formula_One_World_Championship"}
+        ]
+    },
+    {
+        referenceType:"Image sources",
+        sources:[
+            {name:"Flaticon",link:"https://flaticon.com"},{name:"Freepik",link:"https://freepik.com"}
+        ]
+    },
+]
+
+export {f1Data_2025, f1Data_2025_references}

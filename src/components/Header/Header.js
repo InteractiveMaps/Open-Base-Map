@@ -36,7 +36,8 @@ const Header = () => {
           </div>
         </nav> */}
         <Menu menuButton={<MenuButton className={styles.buttonStyle} onClick={handleMenu}>{menuOpen?<RxCross1 size={28}/>:<GrMenu size={28} />}</MenuButton>} transition>
-        <MenuItem><a href='/moon-landings'>Moon Landings</a></MenuItem>
+          <MenuItem><a href='/moon-landings'>Moon Landings</a></MenuItem>
+          <MenuItem><a href='/formula-1-2025'>Formula 1 2025</a></MenuItem>
           <MenuItem><a href='/formula-1'>Formula 1 2024</a></MenuItem>
           <MenuItem><a href='/mountain'>Highest Points</a></MenuItem>
           <MenuItem><a href='/overseas-military-bases'>Military Bases</a></MenuItem>
