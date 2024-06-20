@@ -41,8 +41,8 @@ if ( className ) {
     <MapContainer className={mapClassName} {...rest} center={DEFAULT_CENTER} zoom={2.5} minZoom={2.5}>
       <TileLayer
         noWrap
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+        url="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
+        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors I &copy; Interactive Maps"
       />
       {data_src.map((location,index)=>{
         return(

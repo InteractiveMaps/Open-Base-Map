@@ -34,7 +34,7 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
     <MapContainer className={mapClassName} {...rest} center={DEFAULT_CENTER} zoom={3} minZoom={3}>
       <TileLayer
         noWrap
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"
         attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors I &copy; Interactive Maps"
       />
         <LayersControl position="topright">

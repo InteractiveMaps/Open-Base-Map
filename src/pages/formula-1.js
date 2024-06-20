@@ -22,13 +22,13 @@ export default function Formula1() {
     <Layout>
       <Head>
       <title>Formula 1 Races 2024 | Interactive Maps</title>
-        <meta name="description" content="Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates,  and event information." />
+        <meta name="description" content="Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates, and event information." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://interactivemaps.vercel.app/formula-1" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:url" content="https://interactivemaps.vercel.app/formula-1"></meta>
         <meta property="og:title" content="Formula 1 Races 2024 | Interactive Maps"></meta>
-        <meta property="og:description" content="Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates,  and event information." />
+        <meta property="og:description" content="Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates, and event information." />
       </Head>
       <Section>
         <Container>

@@ -965,7 +965,8 @@ const base_references=[
             {name:"List of Countries with Overseas Military Bases", link:"https://en.wikipedia.org/wiki/List_of_countries_with_overseas_military_bases"},
             {name: "Military.com",link:"https://www.military.com/base-guide/browse-by-service"},
             {name:"Overseas Military Bases of the United Kingdom", link:"https://en.wikipedia.org/wiki/Overseas_military_bases_of_the_United_Kingdom"},
-            {name:"Politics Today - Djibouti",link:"https://politicstoday.org/djibouti-surrounded-by-military-bases-of-china-us-france-uk-germany-others/"}
+            {name:"Politics Today - Djibouti",link:"https://politicstoday.org/djibouti-surrounded-by-military-bases-of-china-us-france-uk-germany-others/"},
+            {name:"UMap/Map Link", link:"https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"}
         ]
     },
     {

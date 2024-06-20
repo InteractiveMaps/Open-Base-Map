@@ -220,7 +220,9 @@ const mountain_data_references = [
            {name:"List of Elevation extremes", link:"https://en.wikipedia.org/wiki/List_of_elevation_extremes_by_country"},
            {name:"Kao (island)",link:"https://en.wikipedia.org/wiki/Kao_(island)"},
            {name:"Nepen Diakha",link:"https://en.wikipedia.org/wiki/Nepen_Diakha"},
-           {name:"R/Geography" ,link:"https://www.reddit.com/r/geography/comments/lhm24q/the_high_point_of_every_country_sahrawi_arab/"}
+           {name:"R/Geography" ,link:"https://www.reddit.com/r/geography/comments/lhm24q/the_high_point_of_every_country_sahrawi_arab/"},
+           {name:"UMap/Map Link", link:"https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"},
+           {name:"OSM Map Link", link:"https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"}
         ]
     },
     {

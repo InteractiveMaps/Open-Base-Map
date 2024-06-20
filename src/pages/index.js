@@ -50,27 +50,27 @@ export default function Moon_Landings() {
                 <a href='/formula-1-2025' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of all Formula 1 Races in 2025</h3>
                     <img src='screenshots/f1_2025_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Showcases the entire race calendar for Formula 1 in 2025, complete with animations as drivers travel from race to race</p>
+                    <p>Explore the complete map of Formula 1 races for the 2025 season. Discover race locations, dates, and event information.</p>
                 </div></a>
                 <a href='/moon-landings' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of all Landings/Impacts on the Moon</h3>
                     <img src='screenshots/moon_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Showcases all the impacts and landings on the moon, since 1960s</p>
+                    <p>Discover a comprehensive map of every successful and failed mission that landed/impacted on the Moon.</p>
                 </div></a>
                 <a href='/formula-1' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of all Formula 1 Races in 2024</h3>
                     <img src='screenshots/f1_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Showcases the entire race calendar for Formula 1 in 2024, complete with animations as drivers travel from race to race</p>
+                    <p>Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates, and event information.</p>
                 </div></a>
                 <a href='/highest-points' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of the Highest Points in each Country</h3>
                     <img src='screenshots/mountain_screenshot.png' sstyle={{width:"100%"}}></img>
-                    <p>Showcases the highest points in all countries/regions across the world. </p>
+                    <p>Explore the highest points in every country with our detailed map. Discover elevation data and learn about the world's most prominent peaks.</p>
                 </div></a>
                 <a href='/overseas-military-bases' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of Overseas Military Bases</h3>
                     <img src='screenshots/base_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Showcases the highest points in all countries/regions across the world. </p>
+                    <p>Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status. </p>
                 </div></a>
             </div>
         </Container>
