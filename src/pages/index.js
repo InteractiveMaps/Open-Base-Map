@@ -62,7 +62,7 @@ export default function Moon_Landings() {
                     <img src='screenshots/f1_screenshot.png' style={{width:"100%"}}></img>
                     <p>Showcases the entire race calendar for Formula 1 in 2024, complete with animations as drivers travel from race to race</p>
                 </div></a>
-                <a href='/mountain' className={styles.gridItem}><div className={styles.card}>
+                <a href='/highest-points' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of the Highest Points in each Country</h3>
                     <img src='screenshots/mountain_screenshot.png' sstyle={{width:"100%"}}></img>
                     <p>Showcases the highest points in all countries/regions across the world. </p>
