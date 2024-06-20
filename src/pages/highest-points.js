@@ -26,9 +26,14 @@ export default function Mountain() {
   return (
     <Layout>
       <Head>
-        <title>Map of the Highest Points in the World</title>
-        <meta name="description" content="An interactive 2D and 3D map that showcases the highest points of each country" />
+        <title>Highest Points of Each Country | Interactive Maps</title>
+        <meta name="description" content="Explore the highest points in every country with our detailed map. Discover elevation data and learn about the world's most prominent peaks." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://interactivemaps.vercel.app/highest-points" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://interactivemaps.vercel.app/highest-points"></meta>
+        <meta property="og:title" content="Highest Points of Each Country | Interactive Maps"></meta>
+        <meta property="og:description" content="Explore the highest points in every country with our detailed map. Discover elevation data and learn about the world's most prominent peaks." />
       </Head>
       <Section>
         <Container>

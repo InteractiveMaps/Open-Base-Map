@@ -21,9 +21,14 @@ export default function Formula1() {
   return (
     <Layout>
       <Head>
-        <title>Map of Formula 1 Races in 2025</title>
-        <meta name="description" content="This is a 3d map that showcases the locations of all the F1/Formula 1 races in 2025" />
+        <title>Formula 1 Races 2025 | Interactive Maps</title>
+        <meta name="description" content="Explore the complete map of Formula 1 races for the 2025 season. Discover race locations, dates, and event information." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://interactivemaps.vercel.app/formula-1-2025" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://interactivemaps.vercel.app/formula-1-2025"></meta>
+        <meta property="og:title" content="Formula 1 Races 2025 | Interactive Maps"></meta>
+        <meta property="og:description" content="Explore the complete map of Formula 1 races for the 2025 season. Discover race locations, dates,  and event information." />
       </Head>
       <Section>
         <Container>

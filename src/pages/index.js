@@ -11,9 +11,14 @@ export default function Moon_Landings() {
   return (
     <Layout>
       <Head>
-        <title>Interactive Maps</title>
-        <meta name="description" content="Open source Interactive Maps to showcase data in a cool way" />
+        <title>Interactive Maps: Dynamic Visualizations and Geographical Data</title>
+        <meta name="description" content="Explore dynamic, fully interactive and unique maps on Interactive Maps." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://interactivemaps.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://interactivemaps.vercel.app/"></meta>
+        <meta property="og:title" content="Interactive Maps: Dynamic Visualizations and Geographical Data"></meta>
+        <meta property="og:description" content="Explore dynamic, fully interactive and maps on Interactive Maps."/>
       </Head>
       <Section>
         <Container style={{border:"0px solid gray", borderRadius:"10px"}}>

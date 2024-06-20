@@ -27,9 +27,14 @@ export default function Moon_Landings() {
   return (
     <Layout>
       <Head>
-        <title>Map of Every Mission that Landed on the Moon</title>
-        <meta name="description" content="This is a 3d map that showcases the locations of all the impacts and landings on the Moon" />
+        <title>Explore Every Moon Landing Mission | Interactive Maps</title>
+        <meta name="description" content="Discover a comprehensive map of every successful and failed mission that landed/impacted on the Moon." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://interactivemaps.vercel.app/moon-landings" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://interactivemaps.vercel.app/moon-landings"></meta>
+        <meta property="og:title" content="Explore Every Moon Landing Mission | Interactive Maps"></meta>
+        <meta property="og:description" content="Discover a comprehensive map of every successful and failed mission that landed/impacted on the Moon." />
       </Head>
       <Section>
         <Container>

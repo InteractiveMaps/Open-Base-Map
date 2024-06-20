@@ -26,9 +26,14 @@ export default function Overseas_Military_Bases() {
   return (
     <Layout>
       <Head>
-        <title>Interactive Maps</title>
-        <meta name="description" content="Open source Interactive Maps to showcase data in a cool way" />
+        <title>Overseas Military Bases | Interactive Maps</title>
+        <meta name="description" content="Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status." />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://interactivemaps.vercel.app/overseas-military-bases" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://interactivemaps.vercel.app/overseas-military-bases"></meta>
+        <meta property="og:title" content="Overseas Military Bases | Interactive Maps"></meta>
+        <meta property="og:description" content="Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status." />
       </Head>
       <Section>
         <Container>
