@@ -30,23 +30,12 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
         iconSize: [20,30]
   })
 
-  // useEffect(() => {
-  //   (async function init() {
-  //     delete Leaflet.Icon.Default.prototype._getIconUrl;
-  //     Leaflet.Icon.Default.mergeOptions({
-  //       iconRetinaUrl: 'leaflet/images/marker-icon-2x.png',
-  //       iconUrl: 'leaflet/images/marker-icon.png',
-  //       shadowUrl: 'leaflet/images/marker-shadow.png',
-  //     });
-  //   })();
-  // }, []);
-
   return (
     <MapContainer className={mapClassName} {...rest} center={DEFAULT_CENTER} zoom={3} minZoom={3}>
       <TileLayer
         noWrap
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+        attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors I &copy; Interactive Maps"
       />
         <LayersControl position="topright">
           {data.map((base)=>{
@@ -66,6 +55,15 @@ const Map = ({ children, className, width, height, markerToggle, ...rest }) => {
                               <img style={{width:"1.5em"}} src={"/country/"+base.country+".png"} alt={"flag of" + base.country} />
                               {base.country}
                             </div>
+                            {location.alsoUsedBy?
+                            <div>
+                              <hr/>
+                              Also used by: <br></br>
+                              <div style={{display:"flex", gap: "10px", alignItems:"center", maxWidth: "fit-content"}}>
+                                <img style={{width:"1.5em"}} src={"/country/"+location.alsoUsedBy+".png"} alt={"flag of" + base.country} />
+                                {location.alsoUsedBy}
+                              </div>
+                            </div>:<></>}
                           </div>
                         </Popup>
                       </Marker>

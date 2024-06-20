@@ -22,16 +22,16 @@ const Root = ({year,data,...rest}) => {
   const [initialViewState, setInitialViewState] = useState(CITIES[0]);
   const [arcLayers,setArcLayer] = useState([])
   
- 
+  CITIES[counter].latitude**2
   function incrementRace(){
       if(counter+1<CITIES.length){
         setCounter(counter + 1)
         setArcLayer([...arcLayers,
           new ArcLayer({
             id: "ArcLayer"+counter+1,
-            data:CITIES[counter],
-            getSourceColor: [Math.sqrt(CITIES[counter].name.length), 240, 0], 
-            getTargetColor: [Math.sqrt(CITIES[counter].circuit.length), 140, 0],
+            data: CITIES[counter],
+            getSourceColor: [Math.sqrt(CITIES[counter].longitude*500),  Math.random() * (100 - 0) + 100, Math.sqrt(CITIES[counter].latitude*500)], 
+            getTargetColor: [Math.sqrt(CITIES[counter].to_longitude*500),  Math.random() * (100 - 0) + 0, Math.sqrt(CITIES[counter].to_latitutde*500)],
             getSourcePosition: [CITIES[counter].longitude, CITIES[counter].latitude],
             getTargetPosition: [CITIES[counter].to_longitude, CITIES[counter].to_latitutde],
             getWidth: 3,
