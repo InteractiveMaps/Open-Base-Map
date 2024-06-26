@@ -52,37 +52,6 @@ export default function Root() {
   }
   const backgroundLayers = useMemo(
     () => [
-      new IconLayer({
-        id:"IconLayer",
-        data:mountainData,
-        getColor: (d) => [100, 140, 0],
-        getPosition: (d) => d.coordinates.reverse(),
-        getSize: 32,
-        getIcon: (d) => ({
-            url: makeIcon(d.height),
-            width:128,
-            height:128,            
-        }),
-        iconMapping: {
-            "marker": {
-            "x": 0,
-            "y": 0,
-            "width": 50,
-            "height": 84,
-            "anchorY": 42,
-            },
-            "marker-warning": {
-            "x": 128,
-            "y": 0,
-            "width": 128,
-            "height": 128,
-            "anchorY": 128,
-            "mask": false
-            }
-            },
-        pickable: true,
-        billboard:true,
-      }),
       new HexagonLayer({
         id:"HexagonLayer",
         data:mountainData,
@@ -116,7 +85,38 @@ export default function Root() {
               _imageCoordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
               bounds: [west, south, east, north]
             });}
-      })
+      }),
+      new IconLayer({
+        id:"IconLayer",
+        data:mountainData,
+        getColor: (d) => [100, 140, 0],
+        getPosition: (d) => d.coordinates.reverse(),
+        getSize: 32,
+        getIcon: (d) => ({
+            url: makeIcon(d.height),
+            width:128,
+            height:128,            
+        }),
+        iconMapping: {
+            "marker": {
+            "x": 0,
+            "y": 0,
+            "width": 50,
+            "height": 84,
+            "anchorY": 42,
+            },
+            "marker-warning": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128,
+            "anchorY": 128,
+            "mask": false
+            }
+            },
+        pickable: true,
+        billboard:true,
+      }),
     ],
     []
   );

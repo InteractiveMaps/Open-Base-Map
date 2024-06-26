@@ -47,6 +47,11 @@ export default function Moon_Landings() {
         <Container>
             <h1>All Maps</h1>
             <div className={styles.gridContainer}>
+                <a href='/major-ww1-battles' className={styles.gridItem}><div className={styles.card}>
+                    <h3>Map of Major WW1 Battles</h3>
+                    <img src='screenshots/ww1_screenshot.png' style={{width:"100%"}}></img>
+                    <p>Explore the major battles that took place during World War 1, as both the Allied and Axis powers battled for supremacy.</p>
+                </div></a>
                 <a href='/formula-1-2025' className={styles.gridItem}><div className={styles.card}>
                     <h3>Map of all Formula 1 Races in 2025</h3>
                     <img src='screenshots/f1_2025_screenshot.png' style={{width:"100%"}}></img>

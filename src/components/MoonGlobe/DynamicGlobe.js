@@ -39,6 +39,25 @@ export default function Root() {
 
   const backgroundLayers = useMemo(
     () => [
+     
+      new TileLayer({
+        id: 'TileLayer',
+        zoomOffset:2,
+        data: 'https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-moon-basemap-v0-1/all/{z}/{x}/{y}.png',
+        maxZoom: 19,
+        minZoom: 0,
+        renderSubLayers: props => {
+            const {
+              bbox: {west, south, east, north}
+            } = props.tile;
+    
+            return new BitmapLayer(props, {
+              data: null,
+              image: props.data,
+              _imageCoordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
+              bounds: [west, south, east, north]
+            });}
+      }),
       new IconLayer({
         id:"IconLayer",
         data:mountainData,
@@ -69,24 +88,6 @@ export default function Root() {
           },
         pickable: true,
         billboard:true,
-      }),
-      new TileLayer({
-        id: 'TileLayer',
-        zoomOffset:2,
-        data: 'https://cartocdn-gusc.global.ssl.fastly.net/opmbuilder/api/v1/map/named/opm-moon-basemap-v0-1/all/{z}/{x}/{y}.png',
-        maxZoom: 19,
-        minZoom: 0,
-        renderSubLayers: props => {
-            const {
-              bbox: {west, south, east, north}
-            } = props.tile;
-    
-            return new BitmapLayer(props, {
-              data: null,
-              image: props.data,
-              _imageCoordinateSystem: COORDINATE_SYSTEM.CARTESIAN,
-              bounds: [west, south, east, north]
-            });}
       })
     ],
     []
