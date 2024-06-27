@@ -25,19 +25,17 @@ export default function Moon_Landings() {
             <h1>Latest Map</h1>
             <div style={{display:"flex", flexDirection:"row", alignItems:"center", flexWrap:"wrap", justifyContent:"space-between", padding:"10px 0 20px"}}>
                 <div className={styles.heroImage}>
-                    <img src='screenshots/moon_screenshot.png'></img>
+                    <img src='screenshots/ww1_screenshot.png'></img>
                 </div>
                 <div className={styles.heroContent} >
-                    <h3>Map of all Landings/Impacts on the Moon</h3>
-                    <p>Since human beings discovered space flight, the concept for getting to the moon has always been at the forefront
-                        of exploration. From the late 1950s, the United States and the Soviet Union have competed to reach the moon. 
+                    <h3>Map of Major WW1 Battles</h3>
+                    <p>WW1 or the First World War was a global conflict fought between the Allies and the Central Powers. 
                     </p>
                     <p>
-                    Now in this new millenia,
-                        at least 9 countries have built equipment that has landed/impacted our nearest neighbour. 
-                        This map showcases all the locations on the moon where landings and impacts have occured
+                     As one of the deadliest conflicts in human history, the war was fought over several battles stretching from 1914 to 1918.
+                     We chronologically mapped some of the major battles of WW1 (inspired by History.com).
                     </p>
-                    <a style={{display:"flex", alignItems:"center", gap:"1rem"}} href='/moon-landings'><b>Check it out here</b> <GoArrowRight size={24} /></a>
+                    <a style={{display:"flex", alignItems:"center", gap:"1rem"}} href='/major-ww1-battles'><b>Check it out here</b> <GoArrowRight size={24} /></a>
                 </div>
             </div>
             {/* <hr></hr> */}

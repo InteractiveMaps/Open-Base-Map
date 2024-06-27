@@ -146,7 +146,7 @@ function decrementWar(){
                 <span className={styles.officialName}>{CITIES[counter].casualties}</span>
               </div>
               <div>
-                <a href={CITIES[counter].reference}>Reference</a>
+                <a href={CITIES[counter].reference} style={{fontStyle:"italic "}}>Link</a>
               </div>
             </div>
           <button className={styles.buttonStyle} disabled={counter+1<CITIES.length?false:true} onClick={incrementWar}><FaArrowRight /></button>
