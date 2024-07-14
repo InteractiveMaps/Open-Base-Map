@@ -44,7 +44,7 @@ export default function Moon_Landings() {
       <Section>
         <Container>
             <h1>All Maps</h1>
-            {/* <div className={styles.gridContainer}>
+            <div className={styles.gridContainer}>
                 <a href='/antoni-gaudi-architecture' className={styles.gridItems}><div className={styles.card}>
                     <h3>Map of Antoni Gaudi's Architecture</h3>
                     <img src='screenshots/antoni_gaudi.png' style={{width:"100%"}}></img>
@@ -80,8 +80,8 @@ export default function Moon_Landings() {
                     <img src='screenshots/base_screenshot.png' style={{width:"100%"}}></img>
                     <p>Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status. </p>
                 </div></a>
-            </div> */}
-            <div className={styles.scrollingWrapperFlexbox}>
+            </div>
+            {/* <div className={styles.scrollingWrapperFlexbox}>
               <a href='/antoni-gaudi-architecture' className={styles.cardTwo}>
                   <div className={styles.card}>
                       <h3>Map of Antoni Gaudi's Architecture</h3>
@@ -119,7 +119,7 @@ export default function Moon_Landings() {
                       <img src='screenshots/base_screenshot.png' style={{width:"100%"}}></img>
                       <p>Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status. </p>
                   </div></a>
-            </div>
+            </div> */}
         </Container>
       </Section>
     </Layout>

@@ -45,7 +45,7 @@
 
 .card{
   height: 500px;
-  width: 300px;
+  max-width: 300px; 
   margin-top:1rem;
   padding:30px; 
   border:1px solid gray; 
@@ -59,11 +59,7 @@
 
 .scrollingWrapperFlexbox{
   display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;
   overflow-x: scroll;
-  max-width: 100%;
-
   a {
     flex: 0 0 auto;
   }
