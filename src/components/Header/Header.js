@@ -28,14 +28,8 @@ const Header = () => {
             Interactive Maps
           </Link>
         </p>
-        {/* <nav>
-          <div style={{display:"flex", gap:"1em"}}>
-            <li style={{listStyleType:"none"}}><a href='/formula-1'>Formula 1</a></li>
-            <li style={{listStyleType:"none"}}><a href='/mountain'>Mountain</a></li>
-            <li style={{listStyleType:"none"}}><a href='/'>Military Bases</a></li>
-          </div>
-        </nav> */}
         <Menu menuButton={<MenuButton className={styles.buttonStyle} onClick={handleMenu}>{menuOpen?<RxCross1 size={28}/>:<GrMenu size={28} />}</MenuButton>} transition>
+          <MenuItem><a href='/antoni-gaudi-architecture'>Antoni Gaudi Architecture</a></MenuItem>
           <MenuItem><a href='/major-ww1-battles'>Major WW1 Battles </a></MenuItem>
           <MenuItem><a href='/moon-landings'>Moon Landings</a></MenuItem>
           <MenuItem><a href='/formula-1-2025'>Formula 1 2025</a></MenuItem>

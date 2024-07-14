@@ -44,11 +44,9 @@
 }
 
 .card{
-  display:flex; 
   height: 500px;
-  max-width:100%; 
+  width: 300px;
   margin-top:1rem;
-  flex-direction:column; 
   padding:30px; 
   border:1px solid gray; 
   border-radius:10px;
@@ -59,6 +57,17 @@
   color: wheat;
 }
 
+.scrollingWrapperFlexbox{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  max-width: 100%;
+
+  a {
+    flex: 0 0 auto;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .title{
