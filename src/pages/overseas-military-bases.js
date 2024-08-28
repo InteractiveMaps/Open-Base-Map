@@ -12,6 +12,7 @@ import { useState } from 'react';
 import BaseInfoTable from '@components/InfoTables/BaseInfoTable';
 import { IoIosArrowDown, IoIosArrowUp  } from "react-icons/io";
 import References from '@components/References';
+import Article from 'src/articles/MilitaryBases/Article';
 
 export default function Overseas_Military_Bases() {
   const [data, setData] = useState(bases)
@@ -50,7 +51,7 @@ export default function Overseas_Military_Bases() {
         </Container>
       </Section>
       <Section>
-       
+       <Article />
         <Container>
           <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
             <h2>View Overseas Bases</h2>
