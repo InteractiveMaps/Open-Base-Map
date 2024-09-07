@@ -1,34 +1,30 @@
+import By from "@components/By";
+
 export default function Article() {
   return (
-    <div className="bg-gray-100 min-h-100p">
+    <div className="min-h-100p">
       <section>
-        <div className="content">
-          <h2 className="headline-4">The Evolution of Military Bases</h2>
-          <h4 className="lead">From Imperialism to the Modern Eras</h4>
-        </div>
-      </section>
-      <section>
-        <div className="content">
-          <p className="lead">
+          <h3 className="lead">The Evolution of Military Bases</h3>
+          <By name={"PS"} date={"1st September 2024"}></By>
+          <p className="font-style-normal">
             Since the time of Imperialism, military bases have long played a
             pivotal role in global strategy, serving as hubs for military
             operations and logistics, The constant shift in security needs and
             geopolitical issues has sought the prowess of these bases in both
             acquiring and exerting political influence.{" "}
           </p>
-        </div>
+          <br/>
       </section>
       <section>
-        <div className="content">
           <h4 className="lead">The Beginning: Imperialism</h4>
-          <p className="lead">
+          <p className="font-style-normal">
             The first ideas of military bases can be dated back to the era of
             Imperialism, when European powers sought to expand their empires
             across Africa, Asia, and the Americas. These early bases were
             essential for securing territorial acquisitions, protecting trade
             routes, and controlling colonized regions
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             The British Empire established strategic outposts in areas like
             Egypt and SIngapore, which allowed them to dominate crucial maritime
             routes and safeguard their global interests. Similarly, the French
@@ -36,13 +32,13 @@ export default function Article() {
             colonial grip counteracting the growing presence of the English,
             Dutch, Spanish and other European powers in these regions.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             These bases were not only military fortifications but also acted as
             hubs that aided the expansion and governance of empires to acquire
             the resources they needed for domination.
           </p>
           <h4 className="lead">Post World War II: The Rise of Superpowers</h4>
-          <p className="lead">
+          <p className="font-style-normal">
             World War II marked a significant turning point, particularly for
             the United States, which emerged from the conflict as a global
             superpower. The war had revitalised the American economy and
@@ -53,7 +49,7 @@ export default function Article() {
             exploded due to the reliance of the Allied powers on the US to
             provide military aid.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             In the immediate post-war period, the US embarked on a strategy of
             establishing military bases worldwide. These bases were integral to
             preventing the growth of the plague of communism that started to
@@ -61,7 +57,7 @@ export default function Article() {
             newfound strength of the Soviets post-Cold War.
           </p>
           <h4 className="lead">The Cold War: Where Strategy Came Into Play</h4>
-          <p className="lead">
+          <p className="font-style-normal">
             During the Cold War, the placement of military bases was driven by
             the need to counter the Soviet Union and contain the spread of
             communism. The United States, through NATO, positioned itself across
@@ -76,7 +72,7 @@ export default function Article() {
             the region. Countering the influence of communist movements and
             supporting governments.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             These bases acted as a thorn in either side, reminding them of the
             potential consequences (i.e. introduction of full-scale nuclear war)
             if either side decided to take a jab at each other. Such as in the
@@ -89,7 +85,7 @@ export default function Article() {
             Mujahideen,
           </p>
           <h4>Post-Cold War and Strategic Shifts</h4>
-          <p className="lead">
+          <p className="font-style-normal">
             The end of the Cold War significantly shifted the rationale for
             maintaining the vast array of military bases, especially those of
             the US, leading to closures and adaptations to address new security
@@ -103,7 +99,7 @@ export default function Article() {
             Israel and the protection of vital oil interests in its countries
             like Saudi Arabia, Kuwait and the United Arab Emirates.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             This strategic presence ensures regional stability, secures energy
             supplies, and maintains the free flow of oil. US bases in places
             like Djibouti and the Gulf states play critical roles in
@@ -118,7 +114,7 @@ export default function Article() {
             stability efforts. Djibouti's strategic importance has also
             attracted other global powers.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             China opened its first overseas military base in Djibouti in 2017,
             aimed at protecting its maritime interests, supporting its Belt and
             Road initiative, and enhancing its protection capabilities. Japan,
@@ -131,7 +127,7 @@ export default function Article() {
             anti-piracy efforts and regional security.
           </p>
           <h4>Countering China: The Rise of US Bases in Asia</h4>
-          <p className="lead">
+          <p className="font-style-normal">
             In recent years, the rise of China as a global power has prompted
             the United States to recalibrate its military strategy in Asia.
             Concerns over China's expanding military capabilities and assertive
@@ -141,7 +137,7 @@ export default function Article() {
             Okinawa, are critical for projecting power and ensuring regional
             stability.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             South Korea continues to host significant US military forces, with
             bases like Camp Humphreys serving as forward operating bases to
             deter North Korean aggression and monitor China's activities. The US
@@ -152,7 +148,7 @@ export default function Article() {
             strategic advantage in responding to regional threats
           </p>
           <h4>What Now?</h4>
-          <p className="lead">
+          <p className="font-style-normal">
             In the contemporary security landscape, military bases have evolved
             significantly from traditional fortifications and troop deployments
             to sophisticated hubs for intelligence gathering and surveillance on
@@ -160,7 +156,7 @@ export default function Article() {
             nationalist ideologies that look to threaten the current balance of
             power.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             One prime example is Pine Gap in Australia, a joint US-Australia
             facility. Originally established during the Cold War for missile
             launch detection, Pine Gap now plays a pivotal role in signals
@@ -170,7 +166,7 @@ export default function Article() {
             and economic activities worldwide. This data is crucial for
             assessing potential threats and making informed strategic decisions.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             Similarly, other bases like RAF Menwith Hill, in the United Kingdom
             and Misawa Air Base in Japan are integral parts of a global network
             designed to intercept and analyze electronic communications. These
@@ -185,7 +181,7 @@ export default function Article() {
             maintain continuous and detailed surveillance of potential
             adversaries, ensuring they are prepared for any emerging threats.
           </p>
-          <p className="lead">
+          <p className="font-style-normal">
             In addition to traditional intelligence-gathering roles, these bases
             now support cybersecurity efforts, monitoring and defending against
             cyber threats from hostile nations and non-state actors. From
@@ -196,7 +192,10 @@ export default function Article() {
             installations continue to evolve, reflecting the shifting dynamics
             of a multipolar world and ensuring global stability,
           </p>
-        </div>
+      </section>
+      <br/>
+      <section>
+        <By name={"PS"} date={"1st September 2024"}></By>
       </section>
     </div>
   );

@@ -25,17 +25,16 @@ export default function Moon_Landings() {
             <h1>Latest Map</h1>
             <div style={{display:"flex", flexDirection:"row", alignItems:"center", flexWrap:"wrap", justifyContent:"space-between", padding:"10px 0 20px"}}>
                 <div className={styles.heroImage}>
-                    <img src='screenshots/ww1_screenshot.png'></img>
+                    <img src='screenshots/antoni_gaudi.png'></img>
                 </div>
                 <div className={styles.heroContent} >
-                    <h3>Map of Major WW1 Battles</h3>
-                    <p>WW1 or the First World War was a global conflict fought between the Allies and the Central Powers. 
+                    <h3>Map of Antoni Gaudi's Architecture </h3>
+                    <p>Antonio Gaudi is highly regarded as one of the greatest of all time.
                     </p>
                     <p>
-                     As one of the deadliest conflicts in human history, the war was fought over several battles stretching from 1914 to 1918.
-                     We chronologically mapped some of the major battles of WW1 (inspired by History.com).
+                     Most of his work is based on Spain and more specifically within Barcelona. So we pinpointed all of the Gaudi structrures that Antoni was involved with.
                     </p>
-                    <a style={{display:"flex", alignItems:"center", gap:"1rem"}} href='/major-ww1-battles'><b>Check it out here</b> <GoArrowRight size={24} /></a>
+                    <a style={{display:"flex", alignItems:"center", gap:"1rem"}} href='/antoni-gaudi-architecture'><b>Check it out here</b> <GoArrowRight size={24} /></a>
                 </div>
             </div>
             {/* <hr></hr> */}
@@ -43,42 +42,42 @@ export default function Moon_Landings() {
       </Section>
       <Section>
         <Container>
-            <h1>All Maps</h1>
+            <h2>All Maps</h2>
             <div className={styles.gridContainer}>
                 <a href='/antoni-gaudi-architecture' className={styles.gridItems}><div className={styles.card}>
-                    <h3>Map of Antoni Gaudi's Architecture</h3>
+                    <h5>Map of Antoni Gaudi's Architecture</h5>
                     <img src='screenshots/antoni_gaudi.png' style={{width:"100%"}}></img>
-                    <p>Explore Catalan maestro Antoni Gaudi's highly individualized architecture laid out around Spain.</p>
+                    <p className='text-dark'>Explore Catalan maestro Antoni Gaudi's highly individualized architecture laid out around Spain.</p>
                 </div></a>
                 <a href='/major-ww1-battles' className={styles.gridItems}><div className={styles.card}>
-                    <h3>Map of Major WW1 Battles</h3>
+                    <h5>Map of Major WW1 Battles</h5>
                     <img src='screenshots/ww1_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Explore the major battles that took place during World War 1, as both the Allied and Axis powers battled for supremacy.</p>
+                    <p className='text-dark'>Explore the major battles that took place during World War 1, as both the Allied and Axis powers battled for supremacy.</p>
                 </div></a>
                 <a href='/formula-1-2025' className={styles.gridItems}><div className={styles.card}>
-                    <h3>Map of all Formula 1 Races in 2025</h3>
+                    <h5>Map of all Formula 1 Races in 2025</h5>
                     <img src='screenshots/f1_2025_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Explore the complete map of Formula 1 races for the 2025 season. Discover race locations, dates, and event information.</p>
+                    <p className='text-dark'>Explore the complete map of Formula 1 races for the 2025 season. Discover race locations, dates, and event information.</p>
                 </div></a>
                 <a href='/moon-landings' className={styles.gridItems}><div className={styles.card}>
-                    <h3>Map of all Landings/Impacts on the Moon</h3>
+                    <h5>Map of all Landings/Impacts on the Moon</h5>
                     <img src='screenshots/moon_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Discover a comprehensive map of every successful and failed mission that landed/impacted on the Moon.</p>
+                    <p className='text-dark'>Discover a comprehensive map of every successful and failed mission that landed/impacted on the Moon.</p>
                 </div></a>
                 <a href='/formula-1' className={styles.gridItems}><div className={styles.card}>
-                    <h3>Map of all Formula 1 Races in 2024</h3>
+                    <h5>Map of all Formula 1 Races in 2024</h5>
                     <img src='screenshots/f1_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates, and event information.</p>
+                    <p className='text-dark'>Explore the complete map of Formula 1 races for the 2024 season. Discover race locations, dates, and event information.</p>
                 </div></a>
                 <a href='/highest-points' className={styles.gridItems}><div className={styles.card}>
-                    <h3>Map of the Highest Points in each Country</h3>
+                    <h5>Map of the Highest Points in each Country</h5>
                     <img src='screenshots/mountain_screenshot.png' sstyle={{width:"100%"}}></img>
-                    <p>Explore the highest points in every country with our detailed map. Discover elevation data and learn about the world's most prominent peaks.</p>
+                    <p className='text-dark'>Explore the highest points in every country with our detailed map. Discover elevation data and learn about the world's most prominent peaks.</p>
                 </div></a>
                 <a href='/overseas-military-bases' className={styles.gridItem}><div className={styles.card}>
-                    <h3>Map of Overseas Military Bases</h3>
+                    <h5>Map of Overseas Military Bases</h5>
                     <img src='screenshots/base_screenshot.png' style={{width:"100%"}}></img>
-                    <p>Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status. </p>
+                    <p className='text-dark'>Explore the overseas military bases of several countries, laid all across the world as they fight for superpower status. </p>
                 </div></a>
             </div>
             {/* <div className={styles.scrollingWrapperFlexbox}>
