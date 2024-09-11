@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@szhsin/react-menu": "^4.1.0",
+    "chart.js": "^4.4.4",
     "cirrus-ui": "^0.7.2-patch.1",
     "copy-webpack-plugin": "^11.0.0",
     "deck.gl": "^9.0.16",
@@ -26,6 +27,7 @@
     "leaflet": "^1.9.4",
     "next": "^14.0.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
     "react-icons": "^4.12.0",

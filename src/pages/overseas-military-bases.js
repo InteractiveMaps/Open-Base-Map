@@ -13,6 +13,7 @@ import BaseInfoTable from "@components/InfoTables/BaseInfoTable";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import References from "@components/References";
 import Article from "src/articles/MilitaryBases/Article";
+import BarChart from "@components/BarChart";
 
 export default function Overseas_Military_Bases() {
   const [data, setData] = useState(bases);
