@@ -22,6 +22,7 @@
     "chart.js": "^4.4.4",
     "cirrus-ui": "^0.7.2-patch.1",
     "copy-webpack-plugin": "^11.0.0",
+    "d3-fetch": "^3.0.1",
     "deck.gl": "^9.0.16",
     "globe.gl": "^2.32.4",
     "leaflet": "^1.9.4",
