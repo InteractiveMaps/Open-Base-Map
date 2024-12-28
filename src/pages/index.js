@@ -32,7 +32,7 @@ export default function Moon_Landings() {
                     <p>
                      Most of his work is based on Spain and more specifically within Barcelona. So we pinpointed all of the Gaudi structrures that Antoni was involved with.
                     </p>
-                    <a style={{display:"flex", alignItems:"center", gap:"1rem"}} href='/antoni-gaudi-architecture'><b>Check it out here</b> <GoArrowRight size={24} /></a>
+                    <a className="u u-LR" style={{display:"flex", width:"fit-content", alignItems:"center", gap:"1rem"}} href='/antoni-gaudi-architecture'><b>Check it out here</b> <GoArrowRight size={24} /></a>
                 </div>
             </div>
             {/* <hr></hr> */}
@@ -41,7 +41,7 @@ export default function Moon_Landings() {
       <Section>
         <Container>
             <h2>All Maps</h2>
-            <div className={styles.gridContainer}>
+            <div className='grid grid-cols-5-xl grid-cols-4-lg grid-cols-3-md grid-cols-1 u-gap-2'>
                 <a href='/antoni-gaudi-architecture' className={styles.gridItems}><div className={styles.card}>
                     <h5>Map of Antoni Gaudi's Architecture</h5>
                     <img src='screenshots/antoni_gaudi.png' style={{width:"100%"}}></img>
