@@ -2,9 +2,7 @@ import Head from 'next/head';
 import Layout from '@components/Layout';
 import Section from '@components/Section';
 import Container from '@components/Container';
-
 import styles from '@styles/Home.module.scss';
-import { useState } from 'react';
 import { GoArrowRight } from "react-icons/go";
 
 export default function Moon_Landings() {

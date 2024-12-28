@@ -11,12 +11,12 @@ export default function Article() {
         <p className="font-style-normal">
           Since the time of Imperialism, military bases have long played a
           pivotal role in global strategy, serving as hubs for military
-          operations and logistics, The constant shift in security needs and
+          operations and logistics. The constant shift in security needs and
           geopolitical issues has sought the prowess of these bases in both
-          acquiring and exerting political influence.{" "}
+          acquiring and exerting political influence.
         </p>
-        <br />
       </section>
+      <br/>
       <section>
         <h4 className="lead">The Beginning: Imperialism</h4>
         <p className="font-style-normal">
@@ -24,21 +24,16 @@ export default function Article() {
           Imperialism, when European powers sought to expand their empires
           across Africa, Asia, and the Americas. These early bases were
           essential for securing territorial acquisitions, protecting trade
-          routes, and controlling colonized regions
-        </p>
-        <p className="font-style-normal">
-          The British Empire established strategic outposts in areas like Egypt
+          routes, and controlling colonized regions. The British Empire established strategic outposts in areas like Egypt
           and Singapore, which allowed them to dominate crucial maritime routes
           and safeguard their global interests. Similarly, the French set up
           bases in North Africa and Southeast Asia to maintain their colonial
           grip counteracting the growing presence of the English, Dutch, Spanish
-          and other European powers in these regions.
-        </p>
-        <p className="font-style-normal">
-          These bases were not only military fortifications but also acted as
+          and other European powers in these regions. These bases were not only military fortifications but also acted as
           hubs that aided the expansion and governance of empires to acquire the
           resources they needed for domination.
         </p>
+        <br/>
         <h4 className="lead">Post World War II: The Rise of Superpowers</h4>
         <p className="font-style-normal">
           World War II marked a significant turning point, particularly for the
@@ -48,15 +43,13 @@ export default function Article() {
           expansion of the communist ideology across Europe and Asia posed a
           significant threat to the US in its ability to continue profiting from
           its immense industrial sector which had exploded due to the reliance
-          of the Allied powers on the US to provide military aid.
-        </p>
-        <p className="font-style-normal">
-          In the immediate post-war period, the US embarked on a strategy of
+          of the Allied powers on the US to provide military aid. In the immediate post-war period, the US embarked on a strategy of
           establishing military bases worldwide. These bases were integral to
           preventing the growth of the plague of communism that started to show
           its mark on the capitalist-dominated world, fueled by the newfound
           strength of the Soviets post-Cold War.
         </p>
+        <br/>
         <h4 className="lead">The Cold War: Where Strategy Came Into Play</h4>
         <p className="font-style-normal">
           During the Cold War, the placement of military bases was driven by the
@@ -82,8 +75,9 @@ export default function Article() {
           frighten each other but also to provide support in the several proxy
           -wars. One such prominent example was the invasion of Afghanistan by
           the Soviets in support of the government's fight against ant-communist
-          Muslim guerrillas, where the US rushed to support the Mujahideen,
+          Muslim guerrillas, where the US rushed to support the Mujahideen.
         </p>
+        <br/>
         <h4>Post-Cold War and Strategic Shifts</h4>
         <p className="font-style-normal">
           The end of the Cold War significantly shifted the rationale for
@@ -125,6 +119,7 @@ export default function Article() {
           operates a base in Djibouti, contributing to international anti-piracy
           efforts and regional security.
         </p>
+        <br/>
         <h4>Countering China: The Rise of US Bases in Asia</h4>
         <p className="font-style-normal">
           In recent years, the rise of China as a global power has prompted the
@@ -133,10 +128,7 @@ export default function Article() {
           the South China Sea have led the US to bolster its presence in the
           region. Key bases in Japan, such as Yokosuka Naval Base and Kadena Air
           Base, and the US Marine Corps presence in Okinawa, are critical for
-          projecting power and ensuring regional stability.
-        </p>
-        <p className="font-style-normal">
-          South Korea continues to host significant US military forces, with
+          projecting power and ensuring regional stability. South Korea continues to host significant US military forces, with
           bases like Camp Humphreys serving as forward operating bases to deter
           North Korean aggression and monitor China's activities. The US has
           also strengthened alliances with countries like Australia, enhancing
@@ -145,6 +137,7 @@ export default function Article() {
           allows the US to access bases, providing a strategic advantage in
           responding to regional threats
         </p>
+        <br/>
         <h4>What Now?</h4>
         <div className="u-flex u-flex-row u-justify-space-between u-items-center u-flex-wrap">
           <div className="w-40p-lg w-auto-md">
@@ -192,7 +185,7 @@ export default function Article() {
               challenges, military bases have been critical in shaping
               international relations. The strategic placement and purpose of
               these installations continue to evolve, reflecting the shifting
-              dynamics of a multipolar world and ensuring global stability,
+              dynamics of a multipolar world and ensuring global stability.
             </p>
           </div>
           <div className="w-100p-md w-50p-lg">

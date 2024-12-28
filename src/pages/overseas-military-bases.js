@@ -6,14 +6,12 @@ import Map from "@components/Map";
 import BaseMapLegend from "@components/Legends/BaseMapLegend";
 import Switch from "react-switch";
 
-import styles from "@styles/Home.module.scss";
 import { bases, base_references } from "../data/data";
 import { useState } from "react";
 import BaseInfoTable from "@components/InfoTables/BaseInfoTable";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import References from "@components/References";
 import Article from "src/articles/MilitaryBases/Article";
-import BarChart from "@components/BarChart";
 
 export default function Overseas_Military_Bases() {
   const [data, setData] = useState(bases);
@@ -54,7 +52,9 @@ export default function Overseas_Military_Bases() {
       </Head>
       <Section>
         <Container>
-          <h1 className="lead" style={{textAlign:"center"}}>Map of Overseas Military Bases</h1>
+          <h1 className="lead" style={{ textAlign: "center" }}>
+            Map of Overseas Military Bases
+          </h1>
           <div
             style={{
               display: "flex",
@@ -74,7 +74,7 @@ export default function Overseas_Military_Bases() {
               }}
             >
               <span>Toggle Markers?</span>
-              <Switch onChange={handleChange} checked={isMarker} />
+              <Switch className="form-ext-toggle" onChange={handleChange} checked={isMarker} />
             </div>
           </div>
           <br></br>
@@ -85,7 +85,7 @@ export default function Overseas_Military_Bases() {
         <Container>
           <Article />
         </Container>
-        <br/>
+        <br />
         <Container>
           <div
             onClick={handleOpen}

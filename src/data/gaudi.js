@@ -170,4 +170,14 @@ const gaudi_architecture = [
     }
 ]
 
-export {gaudi_architecture}
+const gaudi_references=[
+    {
+        referenceType:"Data Sources",
+        sources:[
+            {name:"Works of Antoni Gaudi - Unesco", link:"https://whc.unesco.org/en/list/320/"},
+            {name: "Antoni Gaudi - Wikipedia", link:"https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD"},
+        ]
+    }
+]
+
+export {gaudi_architecture, gaudi_references}

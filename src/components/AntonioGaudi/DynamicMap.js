@@ -39,8 +39,8 @@ if ( className ) {
                   <span>{place.duration}</span>
                   <span>{place.location}</span>
                   <p>{place.summary}</p>
-                  <p>{place.phone}</p>
-                  <a href={place.link}>Website</a>
+                  <p>Number: {place.phone}</p>
+                  <a href={place.link}>Find out more</a>
                 </div>
               </Popup>
             </Marker>

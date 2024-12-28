@@ -48,13 +48,12 @@
   max-width: 300px; 
   margin-top:1rem;
   padding:30px; 
-  border:1px solid gray; 
+  border:0.4px solid gray; 
   border-radius:10px;
 }
 
 .card:hover{
-  background-color: black;
-  color: wheat;
+  box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
 }
 
 .scrollingWrapperFlexbox{
