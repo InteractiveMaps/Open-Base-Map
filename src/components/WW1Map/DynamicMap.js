@@ -52,7 +52,7 @@ function decrementWar(){
     () => [
       new TileLayer({
         id: 'TileLayer',
-        data: 'https://c.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        data: 'https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}',
         maxZoom: 19,
         minZoom: 0,
         tileSize: 256,

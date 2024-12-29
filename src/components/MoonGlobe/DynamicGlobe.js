@@ -96,12 +96,16 @@ export default function Root() {
     return object && {
         html:`
         <div>
-            <b>${object.name}</b>
-            <p>${object.country}</p>
-            <p>${object.date}</p>
+            <b>${object.name}</b><br/>
+            <i>${object.type}</i><br/>
+            <span>${object.country}</span><br/>
+            <span>${object.date}</span>
         </div>`,
         style:{
             backgroundColor: "white",
+            // display:"flex",
+            // flexDirection:"column",
+            // gap:"5px",
             color: "black",
         }
     };

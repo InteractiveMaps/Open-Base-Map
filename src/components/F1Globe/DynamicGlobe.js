@@ -15,6 +15,17 @@ import styles from "./F1Globe.module.scss"
 
 
 const EARTH_RADIUS_METERS = 6.3e6;
+const ambientLight = new AmbientLight({
+  color: [255, 255, 255],
+  intensity: 0.5
+});
+const sunLight = new SunLight({
+  color: [255, 255, 255],
+  intensity: 1.0,
+  timestamp: new Date()
+});
+// create lighting effect with light sources
+const lightingEffect = new LightingEffect({ambientLight, sunLight});
 
 const Root = ({year,data,...rest}) => {
   const CITIES=data
@@ -129,7 +140,7 @@ const Root = ({year,data,...rest}) => {
     <div style={{ width:"100%"}}>
       <div style={{margin:"auto", display:"flex", justifyContent:"center", maxWidth:"100%"}}>
         <button className={styles.buttonStyle} disabled={counter>0?false:true} onClick={decrementRace}><FaArrowLeft /> </button>
-          <div style={{display:"flex", gap:"10px", flexWrap:"wrap", flexDirection:"column", alignItems:"center"}}>
+          <div style={{display:"flex", gap:"10px", flexWrap:"wrap", flexDirection:"column", width:'250px', maxWidth:'250px'}}>
             <span className={styles.name}>{CITIES[counter].name}</span>
             <span className={styles.officialName}>{CITIES[counter].official_name}</span>
             <span className={styles.officialName}>{CITIES[counter].circuit}</span>
@@ -143,6 +154,7 @@ const Root = ({year,data,...rest}) => {
             initialViewState={initialViewState}
             layers={[backgroundLayers, arcLayers]}
             controller={true}
+            effects={[lightingEffect]}
             getTooltip={getTooltip}
             views={new GlobeView()}
         >

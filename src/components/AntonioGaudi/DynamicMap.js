@@ -22,11 +22,17 @@ if ( className ) {
     }
   });
 
+  const outerBounds = [
+    [50.505, -29.09],
+    [52.505, 29.09],
+  ]
+
   return (
-    <MapContainer className={mapClassName} {...rest} center={DEFAULT_CENTER} zoom={7} minZoom={2.5}>
+    <MapContainer className={mapClassName} {...rest} center={DEFAULT_CENTER} zoom={7} minZoom={6} maxZoom={8}>
       <TileLayer
         noWrap
-        url="https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+        subdomains='abcd'
         attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors I &copy; Interactive Maps"
       />
       {data_src.map((place,index)=>{

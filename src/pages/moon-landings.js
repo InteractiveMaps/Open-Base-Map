@@ -55,11 +55,11 @@ export default function Moon_Landings() {
       <Section>
         <Container>
           <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
-              <h2>View all Moon Landings/Impacts</h2>
+              <h3>View all Moon Landings/Impacts</h3>
               {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
           </div>
           {isOpen?<MoonInfoTable tableData={moon_landings}></MoonInfoTable>:<></>}
-          <h2>References and Credits</h2>
+          <h3>References and Credits</h3>
           <References referenceData={moon_landings_references}></References>
         </Container>
       </Section>

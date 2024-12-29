@@ -47,6 +47,7 @@ const Map = ({ children, className, width, height, ...rest }) => {
                       <span className={styles.baseName}>{location.name}</span>
                       <span>{location.type}</span>
                       <span>{location.country}</span>
+                      <span>{location.date}</span>
                     </div>
                   </Popup>
                 </Marker>

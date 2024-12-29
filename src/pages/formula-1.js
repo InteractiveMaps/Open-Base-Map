@@ -14,7 +14,7 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 export default function Formula1() {
   const [f1Year, setf1Year] = useState(2024)
   const [data,setData] = useState(f1Data_2024)
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
   function handleOpen(){
     setIsOpen(!isOpen)
   }
@@ -39,11 +39,11 @@ export default function Formula1() {
       <Section>
         <Container>
         <div onClick={handleOpen} style={{display:"flex", cursor:"pointer", flexDirection:"row", justifyContent:"space-between"}}>
-              <h2>View all F1 Races in 2024</h2>
+              <h3>View all F1 Races in 2024</h3>
               {isOpen? <IoIosArrowUp  size={34}  />:<IoIosArrowDown size={34} />}
           </div>
           {isOpen?<F1InfoTable tableData={f1Data_2024}></F1InfoTable>:<></>}
-          <h2>References and Credits</h2>
+          <h3>References and Credits</h3>
           <References referenceData={f1Data_2024_references} />
         </Container>
       </Section>

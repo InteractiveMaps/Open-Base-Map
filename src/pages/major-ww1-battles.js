@@ -48,7 +48,7 @@ export default function Overseas_Military_Bases() {
       </Section>
       <Section>
         <Container>
-          <h2>References and Credits</h2>
+          <h3>References and Credits</h3>
           <References referenceData={ww1_references}/>
         </Container>
       </Section>
